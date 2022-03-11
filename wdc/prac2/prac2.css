@@ -14,3 +14,9 @@ del
 {
     color: grey;
 }
+
+mark
+{
+    background-color: pink;
+    color: darkblue;
+}
