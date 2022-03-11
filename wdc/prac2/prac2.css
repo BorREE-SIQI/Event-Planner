@@ -20,3 +20,13 @@ mark
     background-color: pink;
     color: darkblue;
 }
+
+h2
+{
+    text-align: left;
+    font-family: sans-serif;
+}
+
+pre {
+    font-family: sans-serif;
+}
