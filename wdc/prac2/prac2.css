@@ -38,3 +38,8 @@ h3 {
 .transparent-text {
     color: rgba(0,0,0,0.5)
 }
+
+body.image {
+    background-color: #DCF5F5;
+    background-image: url("cross.png");
+}
