@@ -82,3 +82,7 @@ body{
 .second {
     border-style: solid solid solid solid;
 }
+
+hr {
+    color: #CFDFE4;
+}
