@@ -73,5 +73,12 @@ body{
 
 .red-border-fixed {
     border-style: solid solid null solid;
-    border-color: red
+    border-color: red;
+    border-radius: 8px;
+}
+
+.blue-border-fixed {
+    border-style: solid solid null solid;
+    border-color: red;
+    border-radius: 8px;
 }
