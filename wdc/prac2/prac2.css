@@ -58,4 +58,15 @@ body{
     font-family: cursive;
 }
 
-.
+.red-border {
+    border: solid red;
+}
+
+
+.red-outline {
+    outline: red solid;
+}
+
+.blue-border {
+    border: solid blue;
+}
