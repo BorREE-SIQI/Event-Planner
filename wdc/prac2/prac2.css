@@ -74,14 +74,16 @@ body{
 
 .first {
     border-style: solid solid none solid;
-    border-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     border-color: red;
 
 }
 
 .second {
     border-style: solid solid solid solid;
-    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
     border-color: blue;
 
 }
