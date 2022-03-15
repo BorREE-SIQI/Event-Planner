@@ -46,6 +46,7 @@ body{
 
 #content {
     background-color: white;
+    border: 1px darkgrey;
 }
 
 .blue {
