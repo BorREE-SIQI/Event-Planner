@@ -72,7 +72,13 @@ body{
 }
 
 .fixed {
-    border-top: solid red;
-    border-left: solid blue;
     border-radius: 8px;
+}
+
+.first {
+    border-style: solid solid null solid;
+}
+
+.second {
+    border-style: solid solid solid solid;
 }
