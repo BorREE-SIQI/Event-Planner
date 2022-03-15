@@ -76,7 +76,7 @@ body{
 }
 
 .first {
-    border-style: solid solid null solid;
+    border-style: solid solid none solid;
 }
 
 .second {
