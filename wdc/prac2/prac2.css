@@ -71,16 +71,19 @@ body{
     border: solid blue;
 }
 
-.fixed {
-    border-radius: 8px;
-}
 
 .first {
     border-style: solid solid none solid;
+    border-radius: 8px;
+    border-color: red;
+
 }
 
 .second {
     border-style: solid solid solid solid;
+    border-radius: 8px;
+    border-color: blue;
+
 }
 
 hr {
