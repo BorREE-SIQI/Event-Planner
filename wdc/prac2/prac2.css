@@ -71,14 +71,8 @@ body{
     border: solid blue;
 }
 
-.red-border-fixed {
-    border-style: solid solid null solid;
-    border-color: red;
-    border-radius: 8px;
-}
-
-.blue-border-fixed {
-    border-style: solid solid null solid;
-    border-color: red;
+.fixed {
+    border-top: solid red;
+    border-left: solid blue;
     border-radius: 8px;
 }
