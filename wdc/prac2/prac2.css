@@ -133,7 +133,7 @@ hr {
     border-style: solid;
     /*float: centred;*/
     /*margin-left: 50%;*/
-    margin-right: 50%;
+    margin: auto;
     padding: 12px;
     width: 400px;
     height: 400px;
