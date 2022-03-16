@@ -91,3 +91,18 @@ body{
 hr {
     color: #CFDFE4;
 }
+
+.first-outer {
+    background-color: blue;
+    border-color: red;
+    margin: 0;
+    padding: 0;
+}
+
+.first-inner {
+    background-color: yellow;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
