@@ -121,3 +121,12 @@ hr {
     margin-top: 20px;
     padding: 0;
 }
+
+.second-inner {
+    background-color: yellow;
+    float: centred;
+    padding: 12px;
+    width: 700px;
+    height: 200px;
+    box-sizing: border-box;
+}
