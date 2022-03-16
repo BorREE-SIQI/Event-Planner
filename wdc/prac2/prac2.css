@@ -94,6 +94,7 @@ hr {
 
 .first-outer {
     background-color: blue;
+    border-style: solid;
     border-color: red;
     margin: 0;
     padding: 0;
@@ -101,6 +102,7 @@ hr {
 
 .first-inner {
     background-color: yellow;
+    border-style: solid;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
@@ -117,6 +119,7 @@ hr {
 
 .second-outer {
     background-color: blue;
+    border-style: solid;
     border-color: red;
     margin-top: 20px;
     padding: 0;
@@ -124,6 +127,7 @@ hr {
 
 .second-inner {
     background-color: yellow;
+    border-style: solid;
     float: centred;
     padding: 12px;
     width: 400px;
