@@ -112,5 +112,12 @@ hr {
 }
 
 .nested {
-    text-align: right
+    text-align: right;
+}
+
+.second-outer {
+    background-color: blue;
+    border-color: red;
+    margin-top: 20px;
+    padding: 0;
 }
