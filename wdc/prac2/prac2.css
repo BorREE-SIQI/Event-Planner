@@ -139,3 +139,7 @@ hr {
     height: 400px;
     box-sizing: border-box;
 }
+
+.raleway {
+    font-family: 'Raleway',serif;
+}
