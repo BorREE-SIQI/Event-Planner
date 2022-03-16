@@ -151,5 +151,6 @@ q {
 }
 
 h4 {
-    
+    text-decoration-line: underline;
+    font-style: italic;
 }
