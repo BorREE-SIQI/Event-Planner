@@ -119,6 +119,7 @@ hr {
 }
 
 .second-outer {
+    position: relative;
     background-color: blue;
     border-style: solid;
     border-color: red;
@@ -130,8 +131,8 @@ hr {
     background-color: yellow;
     border-color: red;
     border-style: solid;
-    position: relative;
-    float: centred;
+    /*position: absolute;*/
+    text-align: center;
     padding: 12px;
     width: 400px;
     height: 400px;
