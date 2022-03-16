@@ -108,5 +108,5 @@ hr {
     padding: 12px;
     width: 700px;
     height: 200px;
-    
+    box-sizing: border-box;
 }
