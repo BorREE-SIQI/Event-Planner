@@ -155,7 +155,7 @@ h4 {
     font-style: italic;
 }
 
-p.foot{
+p.fa{
     color: #BFCFD4;
-    float: centred;
+    text-align: center;
 }
