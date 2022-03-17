@@ -156,7 +156,8 @@ h4 {
     font-style: italic;
 }
 
-p.foot{
+span.foot{
     color: #BFCFD4;
-    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
 }
