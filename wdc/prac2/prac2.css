@@ -139,7 +139,7 @@ hr {
 }
 
 .raleway {
-    font-family: 'Raleway',serif;
+    font-family: 'Raleway',sans-serif;
 }
 
 blockquote {
@@ -150,8 +150,10 @@ blockquote {
 }
 
 h4 {
-    text-decoration-line: underline;
+    font-family: 'Raleway',sans-serif;
+    text-decoration: underline;
     font-style: italic;
+    font-weight: normal;
 }
 
 #icons{
