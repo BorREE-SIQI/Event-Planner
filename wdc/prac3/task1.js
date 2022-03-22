@@ -1,4 +1,4 @@
 function myFunction1()
 {
-    document.getElementById("current_time").innerHTML = "now";
+    document.getElementById("current_time").innerText = "now";
 }
