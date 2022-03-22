@@ -1,4 +1,4 @@
 function myFunction1()
 {
-    documnet
+    document.getElementById("current_time").innerHTML = 
 }
