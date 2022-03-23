@@ -22,7 +22,7 @@
                          'Deon Surname',
                          'Loreen Person'];
             var list = document.getElementById("list");
-            for(var i=0; i<=users.length; i++){
+            for(var i=0; i<users.length; i++){
                 var li = document.createElement("li"); //Create new <li>
                 var space = users[i].indexOf(" "); // Get location of space between firstname and surname
                 li.innerHTML = users[i].substring(0, space); // Extract firstname from users and populate <li>
