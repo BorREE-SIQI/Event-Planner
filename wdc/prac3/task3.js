@@ -14,8 +14,10 @@ function function1()
     a.innerText = n;
     document.getElementById("posts").appendChild(a);
 
-    var radios = document.getElementsByName("style").value;
-    if(radios === "bold")
+    var boldCheck = document.getElementById("boldCheck").value;
+    var italicCheck = document.getElementById("italicCheck").value;
+
+    if(boldCheck === "bold")
     {
         var x = document.getElementById("t").value;
         let boldText = x.bold();
@@ -24,7 +26,7 @@ function function1()
         b.innerHTML = boldText;
         document.getElementById("posts").appendChild(b);
     }
-    if(radios === "italic")
+    if(italicCheck === "italic")
     {
         var x = document.getElementById("t").value;
         let italicText = x.italics();
@@ -34,13 +36,11 @@ function function1()
         document.getElementById("posts").appendChild(b);
     }
 
-    else{
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
     b.className = "post-content";
     b.innerHTML = x;
     document.getElementById("posts").appendChild(b);
-    }
 
 
 
