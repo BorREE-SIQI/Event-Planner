@@ -10,7 +10,7 @@ function function1()
 {
     const n = new Date();
     const a = document.getElementsByClassName("post-time");
-    a[0].innerText+ = n;
+    a[0].innerText += n;
 
     var x = document.getElementById("t").value;
     const b = document.getElementsByClassName("post-content");
