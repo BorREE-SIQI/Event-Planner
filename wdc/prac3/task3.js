@@ -17,29 +17,21 @@ function function1()
     var boldCheck = document.getElementById("boldCheck").value;
     var italicCheck = document.getElementById("italicCheck").value;
 
-    if(boldCheck === "bold")
-    {
-        var x = document.getElementById("t").value;
-        let boldText = x.bold();
-        const b = document.createElement("p");
-        b.className = "post-content";
-        b.innerHTML = boldText;
-        document.getElementById("posts").appendChild(b);
-    }
-    if(italicCheck === "italic")
-    {
-        var x = document.getElementById("t").value;
-        let italicText = x.italics();
-        const b = document.createElement("p");
-        b.className = "post-content";
-        b.innerHTML = italicText;
-        document.getElementById("posts").appendChild(b);
-    }
-
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
     b.className = "post-content";
-    b.innerHTML = x;
+
+    if(boldCheck === "bold")
+    {
+        b.innerHTML = boldText;
+    }
+    
+    if(italicCheck === "italic")
+    {
+        b.innerHTML = italicText;
+    }
+
+
     document.getElementById("posts").appendChild(b);
 
 
