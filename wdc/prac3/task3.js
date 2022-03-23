@@ -23,7 +23,7 @@ function function1()
     b.innerHTML = x;
     document.getElementById("posts").appendChild(b);
 
-    console.log(boldCheck);
+    //document.write(boldCheck);
 
 
     // if(boldCheck == "bold")
