@@ -33,6 +33,6 @@ function function1()
     const a = document.createElement("span");
     a.className = "post-time"
     a.innerText = n;
-    documnet.getElementById("posts").appendChild(a);
+    document.getElementById("posts").appendChild(a);
 
 }
