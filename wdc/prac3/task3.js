@@ -8,5 +8,6 @@ function count()
 
 function po()
 {
-    
+    const n = new Date();
+    document.getElementById("posts").innerText = n;
 }
