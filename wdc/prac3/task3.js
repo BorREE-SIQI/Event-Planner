@@ -26,7 +26,12 @@ function function1()
     }
     if(radios === "italic")
     {
-
+        var x = document.getElementById("t").value;
+        let italicText = x.italics();
+        const b = document.createElement("p");
+        b.className = "post-content";
+        b.innerHTML = italicText;
+        document.getElementById("posts").appendChild(b);
     }
 
     else{
