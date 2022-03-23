@@ -20,21 +20,26 @@ function function1()
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
     b.className = "post-content";
-
-    if(boldCheck === "bold")
-    {
-        boldText = x.bold();
-        b.innerHTML = boldText;
-    }
-
-    if(italicCheck === "italic")
-    {
-        boldText = x.italics();
-        b.innerHTML = italicText;
-    }
-
-
+    b.innerHTML = x;
     document.getElementById("posts").appendChild(b);
+
+    
+
+
+    // if(boldCheck == "bold")
+    // {
+    //     boldText = x.bold();
+    //     b.innerHTML = boldText;
+    // }
+
+    // if(italicCheck == "italic")
+    // {
+    //     boldText = x.italics();
+    //     b.innerHTML = italicText;
+    // }
+
+
+    //document.getElementById("posts").appendChild(b);
 
 
 
