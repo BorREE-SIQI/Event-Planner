@@ -1,1 +1,4 @@
-function mcount()
+function count()
+{
+    
+}
