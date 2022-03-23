@@ -20,7 +20,11 @@ function function1()
     b.innerHTML = x;
     document.getElementById("posts").appendChild(b);
 
-    
+    var radios = document.getElementsByName("style").value;
+    if(radios === "bold")
+    {
+        
+    }
 
 }
 
