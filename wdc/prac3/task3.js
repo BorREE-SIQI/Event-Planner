@@ -11,6 +11,7 @@ function function1()
     const n = new Date();
     var posts=[]
     var date= document.getElementsByClassName("post-time");
+    var x = document.getElementById("t").value;
     var content= document.getElementsByClassName("post-content");
     posts.push({
         "date": date,
@@ -21,10 +22,10 @@ function function1()
         a[0].innerText += n;
         b[0].innerHTML += x;
     }
-    const a = document.getElementsByClassName("post-time");
-    a[0].innerText += n;
+    //const a = document.getElementsByClassName("post-time");
+    //a[0].innerText += n;
 
-    var x = document.getElementById("t").value;
-    const b = document.getElementsByClassName("post-content");
-    b[0].innerHTML += x;
+    //var x = document.getElementById("t").value;
+    //const b = document.getElementsByClassName("post-content");
+    //b[0].innerHTML += x;
 }
