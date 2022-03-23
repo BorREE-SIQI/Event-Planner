@@ -15,6 +15,6 @@ function function1()
 
     var x = document.getElementById("t").value;
     var e = document.createElement("div");
-    e.innerHTML = x;
+    e.innerHTML+= x;
     document.getElementById("posts").appendChild(e);
 }
