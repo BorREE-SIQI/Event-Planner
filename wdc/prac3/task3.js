@@ -24,5 +24,11 @@ function function1()
 
 function hide()
 {
-    document.getElementById("main").style.display = "none";
+    var d= document.getElementById("main");
+    if(d.style.display == "none") {
+        d.style.display = "block";
+    }
+    else {
+        d.style.display = "none";
+    }
 }
