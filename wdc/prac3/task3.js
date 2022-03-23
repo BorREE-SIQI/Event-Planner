@@ -10,9 +10,9 @@ function function1()
 {
     const n = new Date();
     var posts=[]
-    var date= document.getElementsByClassName("post-time");
+    const date= document.getElementsByClassName("post-time");
     var x = document.getElementById("t").value;
-    var content= document.getElementsByClassName("post-content");
+    const content= document.getElementsByClassName("post-content");
     posts.push({
         "date": date,
         "content": content
