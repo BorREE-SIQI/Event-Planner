@@ -46,6 +46,6 @@ hr {
 
 .post-time
 {
-    style: bold;
+    font-weight: bold;
     color: grey;
 }
