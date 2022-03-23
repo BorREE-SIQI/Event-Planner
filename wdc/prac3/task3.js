@@ -24,5 +24,5 @@ function function1()
 
 function hide()
 {
-    
+    document.getElementById("menu").style.display = "block";
 }
