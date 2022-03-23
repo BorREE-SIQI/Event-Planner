@@ -17,13 +17,18 @@ function function1()
     var radios = document.getElementsByName("style").value;
     if(radios === "bold")
     {
-
+        var x = document.getElementById("t").value;
+        let boldText = x.bold();
+        const b = document.createElement("p");
+        b.className = "post-content";
+        b.innerHTML = boldText;
+        document.getElementById("posts").appendChild(b);
     }
     if(radios === "italic")
     {
 
     }
-    
+
     else{
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
