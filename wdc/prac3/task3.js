@@ -10,8 +10,9 @@ function function1()
 {
     const n = new Date();
     const date = document.createElement("post-time")
-    const a = document.getElementsByClassName("post-time");
-    a[0].innerText = n;
+    // const a = document.getElementsByClassName("post-time");
+    // a[0].innerText = n;
+    document.getElementById("posts").appendChild(para);
 
     var x = document.getElementById("t").value;
     const b = document.getElementsByClassName("post-content");
