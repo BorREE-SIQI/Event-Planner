@@ -25,14 +25,14 @@ function function1()
 function hide()
 {
 
-    document.getElementById("main").innerHTML= document.getElementById("menu").innerHTML;
+    document.getElementById("main").style.display="none";
+    document.getElementById("menu").style.display="block";
 
 }
 
 function back()
 {
-    const menu = document.getElementById("menu");
-    const main = document.getElementById("main");
-    //document.getElementById("menu").innerHTML;
+    document.getElementById("main").style.display="block";
+    document.getElementById("menu").style.display="none";
 
 }
