@@ -14,17 +14,25 @@ function function1()
     a.innerText = n;
     document.getElementById("posts").appendChild(a);
 
+    var radios = document.getElementsByName("style").value;
+    if(radios === "bold")
+    {
+
+    }
+    if(radios === "italic")
+    {
+
+    }
+    
+    else{
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
     b.className = "post-content";
     b.innerHTML = x;
     document.getElementById("posts").appendChild(b);
-
-    var radios = document.getElementsByName("style").value;
-    if(radios === "bold")
-    {
-        
     }
+
+
 
 }
 
