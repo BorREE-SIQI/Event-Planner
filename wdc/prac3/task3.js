@@ -26,10 +26,10 @@ function hide()
 {
     var d= document.getElementById("main");
     d = document.getElementById("menu");
-    if(d.style.display == "none") {
-        d = document.getElementById("menu");
-    }
-    else {
-        d.style.display = "none";
-    }
+    // if(d.style.display == "none") {
+    //     d = document.getElementById("menu");
+    // }
+    // else {
+    //     d.style.display = "none";
+    // }
 }
