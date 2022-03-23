@@ -41,6 +41,9 @@ function color()
 {
     const i = document.getElementById("name")
     i.addEventListener('i', event => {
-        
+        if (i.value === "red")
+        {
+            document.body.style.backgroundColor = 'red';
+        }
     }
 }
