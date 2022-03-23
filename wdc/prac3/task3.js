@@ -9,5 +9,6 @@ function count()
 function function1()
 {
     const n = new Date();
-    document.getElementsByClassName("post-time").innerText = n;
+    const a = document.getElementsByClassName("post-time");
+    a[0].innerText = n;
 }
