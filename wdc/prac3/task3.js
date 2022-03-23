@@ -25,8 +25,9 @@ function function1()
 function hide()
 {
     var d= document.getElementById("main");
+    d = document.getElementById("menu");
     if(d.style.display == "none") {
-        d.style.display = "block";
+        d = document.getElementById("menu");
     }
     else {
         d.style.display = "none";
