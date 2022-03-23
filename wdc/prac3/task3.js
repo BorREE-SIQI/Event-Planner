@@ -31,8 +31,14 @@ function function1()
 
     const n = new Date();
     const a = document.createElement("span");
-    a.className = "post-time"
+    a.className = "post-time";
     a.innerText = n;
     document.getElementById("posts").appendChild(a);
+
+    var x = document.getElementById("t").value;
+    const b = document.createElement("span");
+    b.className = "post-content";
+    b.innerHTML = x;
+    document.getElementById("posts").appendChild(b);
 
 }
