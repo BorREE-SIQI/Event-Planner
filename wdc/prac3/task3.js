@@ -32,13 +32,13 @@ function function1()
     const n = new Date();
     const a = document.createElement("span");
     a.className = "post-time";
-    a.innerText = n;
+    a.innerText = n+"\n";
     document.getElementById("posts").appendChild(a);
-    document.write("<br>");
+
     var x = document.getElementById("t").value;
     const b = document.createElement("span");
     b.className = "post-content";
-    b.innerHTML = x;
+    b.innerHTML = "\n"+x+"\n";
     document.getElementById("posts").appendChild(b);
 
 }
