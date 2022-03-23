@@ -31,7 +31,7 @@ function function1()
 
     const n = new Date();
     var a = document.createElement("div");
-    a.innerHTML = n;
+    a.innerText = n;
     documnet.getElementById("posts").appendChild(a);
 
 }
