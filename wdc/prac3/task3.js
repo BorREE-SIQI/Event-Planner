@@ -14,6 +14,7 @@ function function1()
     document.getElementById("posts").innerText = n;
 
     var x = document.getElementById("t").value;
-    const b = document.getElementsByClassName("post-content");
-    b[0].innerHTML = x;
+    var e = document.createElement("div");
+    e.innerHTML = x;
+    document.getElementById("posts").appendChild(e);
 }
