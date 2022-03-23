@@ -9,5 +9,5 @@ function count()
 function po()
 {
     const n = new Date();
-    document.getElementById("date").innerHTML = n;
+    document.getElementsByClassName("post-time").innerHTML = n;
 }
