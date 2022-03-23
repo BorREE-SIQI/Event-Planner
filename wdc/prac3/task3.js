@@ -39,5 +39,8 @@ function back()
 
 function color()
 {
-    document.body.style.backgroundColor = 
+    const i = document.getElementById("name")
+    i.addEventListener('i', event => {
+        
+    }
 }
