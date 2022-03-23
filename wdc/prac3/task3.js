@@ -39,11 +39,7 @@ function back()
 
 function color()
 {
-    const i = document.getElementById("name")
-    i.addEventListener('i', event => {
-        if (i.value === "red")
-        {
-            document.body.style.backgroundColor = 'red';
-        }
-    }
+    let i = document.getElementById("name").value
+
+    document.body.style.backgroundColor = i;
 }
