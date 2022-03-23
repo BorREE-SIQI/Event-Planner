@@ -24,5 +24,5 @@ function function1()
 
 function hide()
 {
-    document.getElementById("main").style.display = '';
+    document.getElementById("main").style.display = "none";
 }
