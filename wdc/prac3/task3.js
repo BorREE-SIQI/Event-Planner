@@ -6,7 +6,7 @@ function count()
     document.getElementById("blank").innerHTML = c;
 }
 
-function po()
+function function1()
 {
     const n = new Date();
     document.getElementsByClassName("post-time").innerText = n;
