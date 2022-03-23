@@ -11,7 +11,7 @@ function function1()
     const n = new Date();
     const date = document.createElement("post-time")
     // const a = document.getElementsByClassName("post-time");
-    data.innerHTML = n;
+    data.innerText = n;
     document.getElementById("posts").appendChild(data);
 
     var x = document.getElementById("t").value;
