@@ -9,6 +9,15 @@ function count()
 function function1()
 {
     const n = new Date();
+    var posts=[]
+    var date= document.getElementsByClassName("post-time");
+    
+    posts.push({
+        "date": date,
+        "content": content
+
+    })
+    for()
     const a = document.getElementsByClassName("post-time");
     a[0].innerText += n;
 
