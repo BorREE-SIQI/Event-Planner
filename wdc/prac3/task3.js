@@ -24,8 +24,8 @@ function function1()
 
 function hide()
 {
-    var d= document.getElementById("main");
-    d = document.getElementById("menu");
+    //var d= document.getElementById("main");
+    document.getElementById("main").innerHTML= document.getElementById("menu").innerHTML;
     // if(d.style.display == "none") {
     //     d = document.getElementById("menu");
     // }
