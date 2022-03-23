@@ -32,7 +32,7 @@ function function1()
     const n = new Date();
     const a = document.createElement("span");
     a.className = "post-time";
-    a.innerText = "\n"+n+"\n"+"\n";
+    a.innerText = n+"\n"+"\n";
     document.getElementById("posts").appendChild(a);
 
     var x = document.getElementById("t").value;
