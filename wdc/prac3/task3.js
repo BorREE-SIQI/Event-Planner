@@ -31,7 +31,7 @@ function hide()
 
 function back()
 {
-    document.getElementById("menu") = "none";
+    //document.getElementById("menu") = "none";
 
     document.getElementById("menu").innerHTML= document.getElementById("main").innerHTML;
 }
