@@ -36,3 +36,8 @@ function back()
     document.getElementById("menu").style.display="none";
 
 }
+
+function color()
+{
+    document.body.style.backgroundColor = 
+}
