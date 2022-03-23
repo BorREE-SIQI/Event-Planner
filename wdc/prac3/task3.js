@@ -23,11 +23,13 @@ function function1()
 
     if(boldCheck === "bold")
     {
+        boldText = x.bold();
         b.innerHTML = boldText;
     }
-    
+
     if(italicCheck === "italic")
     {
+        boldText = x.italics();
         b.innerHTML = italicText;
     }
 
