@@ -9,13 +9,13 @@ function count()
 function function1()
 {
     const n = new Date();
-    const a = document.createElement("span");
+    const a = document.createElement("p");
     a.className = "post-time";
-    a.innerText = n+"\n"+"\n";
+    a.innerText = n;
     document.getElementById("posts").appendChild(a);
 
     var x = document.getElementById("t").value;
-    const b = document.createElement("span");
+    const b = document.createElement("p");
     b.className = "post-content";
     b.innerHTML = x;
     document.getElementById("posts").appendChild(b);
