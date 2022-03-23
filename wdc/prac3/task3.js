@@ -34,7 +34,7 @@ function function1()
     a.className = "post-time";
     a.innerText = n;
     document.getElementById("posts").appendChild(a);
-
+    document.write("<br>");
     var x = document.getElementById("t").value;
     const b = document.createElement("span");
     b.className = "post-content";
