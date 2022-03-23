@@ -1,4 +1,4 @@
-const c = 0;
+var c = 0;
 
 function count()
 {
