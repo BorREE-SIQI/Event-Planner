@@ -28,4 +28,10 @@ function function1()
     //var x = document.getElementById("t").value;
     //const b = document.getElementsByClassName("post-content");
     //b[0].innerHTML += x;
+
+    const n = new Date();
+    const a = document.createElement("span");
+    a.innerHTML = n;
+    documnet
+
 }
