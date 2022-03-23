@@ -35,7 +35,7 @@ function function1()
     a.innerText = n+"\n"+"\n";
     document.getElementById("posts").appendChild(a);
 
-    var x = document.getElementById("t").value+"\n";
+    var x = document.getElementById("t").value;
     const b = document.createElement("span");
     b.className = "post-content";
     b.innerHTML = x;
