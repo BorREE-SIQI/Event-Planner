@@ -30,7 +30,7 @@ function function1()
     //b[0].innerHTML += x;
 
     const n = new Date();
-    var a = document.createElement("div");
+    const a = document.createElement("span.post-time");
     a.innerText = n;
     documnet.getElementById("posts").appendChild(a);
 
