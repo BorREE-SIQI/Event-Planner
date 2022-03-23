@@ -24,12 +24,12 @@ function function1()
 
 function hide()
 {
-    //var d= document.getElementById("main");
+
     document.getElementById("main").innerHTML= document.getElementById("menu").innerHTML;
-    // if(d.style.display == "none") {
-    //     d = document.getElementById("menu");
-    // }
-    // else {
-    //     d.style.display = "none";
-    // }
+
+}
+
+function back()
+{
+    document.getElementById("menu").innerHTML= document.getElementById("main").innerHTML;
 }
