@@ -28,7 +28,7 @@ function function1()
 
 if(blueCheck == true)
     {
-        x.style.color = "blue";
+        x.color = "blue";
 
      if(boldCheck == true)
     {
