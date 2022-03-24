@@ -28,7 +28,7 @@ function function1()
 
 if(blueCheck == true)
     {
-        x.style.color = "blue";
+        document.getElementsByClassName("post-content").style.color = "blue";
 
      if(boldCheck == true)
     {
