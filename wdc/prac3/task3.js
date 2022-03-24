@@ -26,6 +26,10 @@ function function1()
     //b.innerHTML = x;
     //document.getElementById("posts").appendChild(b);
 
+if(blueCheck == true)
+    {
+        x.style.color = "blue";
+
      if(boldCheck == true)
     {
         boldText = x.bold();
@@ -48,8 +52,37 @@ function function1()
     {
         b.innerHTML = x;
     }
+}
 
-    if()
+ else if(redCheck == true)
+{
+    x.style.color = "red";
+
+     if(boldCheck == true)
+    {
+        boldText = x.bold();
+        b.innerHTML = boldText;
+    }
+
+    if(italicCheck == true)
+    {
+        italicText = x.italics();
+        b.innerHTML = italicText;
+    }
+
+    if(boldCheck == true && italicCheck == true)
+    {
+        boldText = x.bold();
+        italicText = boldText.italics();
+        b.innerHTML = italicText;
+    }
+    if (boldCheck == false && italicCheck == false)
+    {
+        b.innerHTML = x;
+    }
+}
+
+
 
     document.getElementById("posts").appendChild(b);
 
