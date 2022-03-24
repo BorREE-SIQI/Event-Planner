@@ -28,7 +28,8 @@ function function1()
 
 if(blueCheck == true)
     {
-        document.getElementsByClassName("post-content").style.color = "blue";
+        const cont = document.getElementsByClassName("post-content");
+        cont[0].style.color = "blue";
 
      if(boldCheck == true)
     {
