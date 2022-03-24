@@ -21,7 +21,6 @@ function function1()
     var redCheck = document.getElementById("redCheck").checked;
 
     var x = document.getElementById("t").value;
-    var y = document.getElementById("t");
     const b = document.createElement("p");
     b.className = "post-content";
     //b.innerHTML = x;
@@ -55,7 +54,7 @@ if(blueCheck == true)
     }
 }
 
- else if(redCheck == true)
+ if(redCheck == true)
 {
     x.style.color = "red";
 
@@ -82,7 +81,7 @@ if(blueCheck == true)
         b.innerHTML = x;
     }
 }
-else
+ if(redCheck == false && blueCheck == false)
 {
     if(boldCheck == true)
     {
