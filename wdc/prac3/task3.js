@@ -78,5 +78,6 @@ function slide()
 {
     var integer = document.getElementById("r").value;
 
-    document.getElementById("posts").getElementsByTagName("div")；
+    document.getElementById("posts").getElementsByTagName("div");
+
 }
