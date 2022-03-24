@@ -46,6 +46,8 @@ function function1()
         b.innerHTML = x;
     }
 
+    if()
+
     document.getElementById("posts").appendChild(b);
 
 
