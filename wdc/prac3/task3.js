@@ -17,6 +17,9 @@ function function1()
     var boldCheck = document.getElementById("boldCheck").checked;
     var italicCheck = document.getElementById("italicCheck").checked;
 
+    var blueCheck = document.getElementById("blueCheck").checked;
+    var redCheck = document.getElementById("redCheck").checked;
+
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
     b.className = "post-content";
