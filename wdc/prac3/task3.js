@@ -25,7 +25,7 @@ function function1()
 
     //document.write(boldCheck);
 
-
+    
     // if(boldCheck == "bold")
     // {
     //     boldText = x.bold();
