@@ -81,6 +81,31 @@ if(blueCheck == true)
         b.innerHTML = x;
     }
 }
+else
+{
+    if(boldCheck == true)
+    {
+        boldText = x.bold();
+        b.innerHTML = boldText;
+    }
+
+    if(italicCheck == true)
+    {
+        italicText = x.italics();
+        b.innerHTML = italicText;
+    }
+
+    if(boldCheck == true && italicCheck == true)
+    {
+        boldText = x.bold();
+        italicText = boldText.italics();
+        b.innerHTML = italicText;
+    }
+    if (boldCheck == false && italicCheck == false)
+    {
+        b.innerHTML = x;
+    }
+}
 
 
 
