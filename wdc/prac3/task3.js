@@ -76,5 +76,7 @@ function color()
 
 function slide()
 {
+    var integer = document.getElementById("r").value;
+
     
 }
