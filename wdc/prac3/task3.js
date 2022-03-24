@@ -45,7 +45,7 @@ function function1()
     {
         b.innerHTML = x;
     }
-    
+
     document.getElementById("posts").appendChild(b);
 
 
@@ -72,4 +72,9 @@ function color()
     let i = document.getElementById("name").value
 
     document.body.style.backgroundColor = i;
+}
+
+function slide()
+{
+    
 }
