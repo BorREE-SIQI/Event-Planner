@@ -14,32 +14,29 @@ function function1()
     a.innerText = n;
     document.getElementById("posts").appendChild(a);
 
-    var boldCheck = document.getElementById("boldCheck").value;
-    var italicCheck = document.getElementById("italicCheck").value;
+    var boldCheck = document.getElementById("boldCheck").checked;
+    var italicCheck = document.getElementById("italicCheck").checked;
 
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
     b.className = "post-content";
-    b.innerHTML = x;
-    document.getElementById("posts").appendChild(b);
-
-    //document.write(boldCheck);
-
-    
-    // if(boldCheck == "bold")
-    // {
-    //     boldText = x.bold();
-    //     b.innerHTML = boldText;
-    // }
-
-    // if(italicCheck == "italic")
-    // {
-    //     boldText = x.italics();
-    //     b.innerHTML = italicText;
-    // }
-
-
+    //b.innerHTML = x;
     //document.getElementById("posts").appendChild(b);
+
+     if(boldCheck == true)
+    {
+        boldText = x.bold();
+        b.innerHTML = boldText;
+    }
+
+    if(italicCheck == true)
+    {
+        boldText = x.italics();
+        b.innerHTML = italicText;
+    }
+
+
+    document.getElementById("posts").appendChild(b);
 
 
 
