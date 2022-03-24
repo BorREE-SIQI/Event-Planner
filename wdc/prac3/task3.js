@@ -31,12 +31,20 @@ function function1()
 
     if(italicCheck == true)
     {
-        boldText = x.italics();
+        italicText = x.italics();
         b.innerHTML = italicText;
     }
 
-    if(boldCheck == true&&italicCheck == true)
-
+    if(boldCheck == true && italicCheck == true)
+    {
+        boldText = x.bold();
+        italicText = boldText.italics();
+        b.innerHTML = italicText;
+    }
+    else
+    {
+        b.innerHTML = x;
+    }
 
     document.getElementById("posts").appendChild(b);
 
