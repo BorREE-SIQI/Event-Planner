@@ -41,7 +41,7 @@ function function1()
         italicText = boldText.italics();
         b.innerHTML = italicText;
     }
-    else
+    if (boldCheck == false && italicCheck == false)
     {
         b.innerHTML = x;
     }
