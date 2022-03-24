@@ -35,6 +35,8 @@ function function1()
         b.innerHTML = italicText;
     }
 
+    if(boldCheck == true&&italicCheck == true)
+
 
     document.getElementById("posts").appendChild(b);
 
