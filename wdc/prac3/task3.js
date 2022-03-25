@@ -32,7 +32,7 @@ if(blueCheck == true)
     {
         // const cont = document.getElementsByClassName("post-content");
         // cont[0].style.color = "blue";
-        x.style.color = "blue;"
+        //x.style.color = "blue;"
      if(boldCheck == true)
     {
         boldText = x.bold();
