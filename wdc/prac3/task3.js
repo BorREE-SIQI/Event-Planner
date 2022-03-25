@@ -145,10 +145,10 @@ function slide()
 
     const container = document.getElementById("posts").getElementsByTagName("div")[0];
 
-    for(i = container.children.length-1; i > container.children.length-integer;i--)
-    {
-        document.write(container);
-        container.children[i].remove();
-    }
-
+    // for(i = container.children.length-1; i > container.children.length-integer;i--)
+    // {
+    //     document.write(container);
+    //     container.children[i].remove();
+    // }
+    document.write(container);
 }
