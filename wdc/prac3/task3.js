@@ -20,6 +20,8 @@ function function1()
     var blueCheck = document.getElementById("blueCheck").checked;
     var redCheck = document.getElementById("redCheck").checked;
 
+    var color = "";
+
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
     b.className = "post-content";
@@ -28,9 +30,9 @@ function function1()
 
 if(blueCheck == true)
     {
-        const cont = document.getElementsByClassName("post-content");
-        cont[0].style.color = "blue";
-
+        // const cont = document.getElementsByClassName("post-content");
+        // cont[0].style.color = "blue";
+        color = "color:blue";
      if(boldCheck == true)
     {
         boldText = x.bold();
@@ -57,8 +59,10 @@ if(blueCheck == true)
 
  if(redCheck == true)
 {
-    const cont = document.getElementsByClassName("post-content");
-    cont[0].style.color = "red";
+    // const cont = document.getElementsByClassName("post-content");
+    // cont[0].style.color = "red";
+
+    color = "color:red";
 
  if(boldCheck == true)
     {
