@@ -20,11 +20,12 @@ function function1()
     var blueCheck = document.getElementById("blueCheck").checked;
     var redCheck = document.getElementById("redCheck").checked;
 
-    var color = "";
+    //var color = "";
 
     var times = document.getElementById("num").value;
 
-    for()
+    for(lei i = 0; i < times; i++)
+    {
 
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
@@ -125,6 +126,7 @@ if(blueCheck == true)
 
 
     document.getElementById("posts").appendChild(b);
+}
 
 
 
