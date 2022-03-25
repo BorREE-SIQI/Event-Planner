@@ -22,6 +22,8 @@ function function1()
 
     var color = "";
 
+    var = document.getElementById("num").value
+
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
     b.className = "post-content";
