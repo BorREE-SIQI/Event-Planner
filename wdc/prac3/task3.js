@@ -143,6 +143,12 @@ function slide()
 {
     var integer = document.getElementById("r").value;
 
-    document.getElementById("posts").getElementsByTagName("div");
+    const container = document.getElementById("posts").getElementsByTagName("div")[0];
+
+    for(i = container.length-1; i > container.length-integer;i--)
+    {
+        document.write(container);
+        container[i].remove();
+    }
 
 }
