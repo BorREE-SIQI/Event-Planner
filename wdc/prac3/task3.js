@@ -37,6 +37,7 @@ if(blueCheck == true)
     {
         boldText = x.bold();
         b.innerHTML = boldText;
+        b.style.color = "blue";
     }
 
     if(italicCheck == true)
