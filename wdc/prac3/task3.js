@@ -22,7 +22,9 @@ function function1()
 
     var color = "";
 
-    var = document.getElementById("num").value
+    var times = document.getElementById("num").value;
+
+    for()
 
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
