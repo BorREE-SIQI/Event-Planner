@@ -35,7 +35,7 @@ if(blueCheck == true)
         //x.style.color = "blue;"
         b.innerHTML = x;
         b.style.color = "blue";
-        
+
      if(boldCheck == true)
     {
         boldText = x.bold();
@@ -66,7 +66,8 @@ if(blueCheck == true)
     // const cont = document.getElementsByClassName("post-content");
     // cont[0].style.color = "red";
 
-   x.style.color = "red;"
+        b.innerHTML = x;
+        b.style.color = "red";
 
  if(boldCheck == true)
     {
