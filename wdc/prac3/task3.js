@@ -33,11 +33,14 @@ if(blueCheck == true)
         // const cont = document.getElementsByClassName("post-content");
         // cont[0].style.color = "blue";
         //x.style.color = "blue;"
+        b.innerHTML = x;
+        b.style.color = "blue";
+        
      if(boldCheck == true)
     {
         boldText = x.bold();
         b.innerHTML = boldText;
-        b.style.color = "blue";
+        // b.style.color = "blue";
     }
 
     if(italicCheck == true)
