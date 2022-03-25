@@ -8,6 +8,11 @@ function count()
 
 function function1()
 {
+    var times = document.getElementById("num").value;
+
+    for(let i = 0; i < times; i++)
+    {
+
     const n = new Date();
     const a = document.createElement("p");
     a.className = "post-time";
@@ -22,10 +27,6 @@ function function1()
 
     //var color = "";
 
-    var times = document.getElementById("num").value;
-
-    for(lei i = 0; i < times; i++)
-    {
 
     var x = document.getElementById("t").value;
     const b = document.createElement("p");
