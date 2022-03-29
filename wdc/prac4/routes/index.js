@@ -7,7 +7,7 @@ var router = express.Router();
 // });
 
 router.get('/last.txt', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('this is a test');
 });
 
 module.exports = router;
