@@ -24,7 +24,7 @@ router.get('/last.txt', function(req, res, next) {
     <body>
       <h1 id = "color">red</h1>
       <script>
-        var color = document.ElementById('color')
+        var color = document.ElementById('color').
       </script>
     </body>
   </html>`
