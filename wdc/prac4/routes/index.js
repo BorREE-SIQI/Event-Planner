@@ -11,6 +11,8 @@ router.get('/color.html', function(req, res, next) {
   res.send(date);
 });
 
+
+
 router.get('/last.txt', function(req, res, next) {
   res.send(date);
 });
