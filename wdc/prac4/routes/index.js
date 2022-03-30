@@ -13,7 +13,7 @@ router.get('/last.txt', function(req, res, next) {
 
 var color;
 
-router.get('/last.txt', function(req, res, next) {
+router.get('/color.html', function(req, res, next) {
   res.send(
   `<!DOCTYPE html>
   <html en = 'lang'>
