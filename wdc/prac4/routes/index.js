@@ -17,7 +17,13 @@ router.get('/last.txt', function(req, res, next) {
   res.send(
   <!DOCTYPE html>
   <html en = 'lang'>
-    <head></>
+    <head>
+    <meta charset = "UTF-8">
+    <title>Task3.2</title>
+    </head>
+    <body>
+      <h1>red</h1>
+    </body>
   </html>
   )
 });
