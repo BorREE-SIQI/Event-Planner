@@ -27,8 +27,8 @@ router.get('/last.txt', function(req, res, next) {
         document.ElementById('color')
       </script>
     </body>
-  </html>
-  )
+  </html>'
+  );
 });
 
 module.exports = router;
