@@ -22,7 +22,10 @@ router.get('/last.txt', function(req, res, next) {
     <title>Task3.2</title>
     </head>
     <body>
-      <h1 style = "color:red">red</h1>
+      <h1 id = "color">red</h1>
+      <script>
+        document.ElementById('color')
+      </script>
     </body>
   </html>
   )
