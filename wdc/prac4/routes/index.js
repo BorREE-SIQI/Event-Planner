@@ -22,7 +22,7 @@ router.get('/color.html', function(req, res, next) {
     <title>Task3.2</title>
     </head>
     <body>
-      <h1 id = "color">red</h1>
+      <h1 id = "color">${color}</h1>
       <script>
         var color = document.getElementById('color');
         color.style.color = color.innerText;
