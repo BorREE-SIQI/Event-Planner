@@ -15,7 +15,7 @@ var color;
 
 router.get('/last.txt', function(req, res, next) {
   res.send(
-  <!DOCTYPE html>
+  `<!DOCTYPE html>
   <html en = 'lang'>
     <head>
     <meta charset = "UTF-8">
@@ -27,7 +27,7 @@ router.get('/last.txt', function(req, res, next) {
         document.ElementById('color')
       </script>
     </body>
-  </html>'
+  </html>`
   );
 });
 
