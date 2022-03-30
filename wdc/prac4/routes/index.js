@@ -7,7 +7,7 @@ var router = express.Router();
 // });
 
 router.get('/last.txt', function(req, res, next) {
-  res.send('this is a test');
+  res.send('Date()');
 });
 
 module.exports = router;
