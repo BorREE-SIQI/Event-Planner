@@ -26,8 +26,6 @@ router.get('/color.html', function(req, res, next) {
     <body>
       <h1 id = "color">${color}</h1>
       <script>
-      var color_text = 'red';
-
         var color = document.getElementById('color');
         color.style.color = color_text;
       </script>
