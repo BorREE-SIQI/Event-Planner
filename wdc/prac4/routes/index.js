@@ -31,7 +31,7 @@ router.get('/color.html', function(req, res, next) {
   {
     color = 'green'
   }
-  else if(count == 1)
+  else if(count == 4)
   {
     color = 'blue'
   }
@@ -47,7 +47,7 @@ router.get('/color.html', function(req, res, next) {
       <h1 id = "color">${color}</h1>
       <script>
         var color = document.getElementById('color');
-        color.style.color = color_text;
+        color.style.color = color.innerText;
       </script>
     </body>
   </html>`
