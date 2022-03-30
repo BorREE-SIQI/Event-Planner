@@ -15,6 +15,7 @@ var color;
 
 router.get('/color.html', function(req, res, next) {
   color++;
+  if()
   res.send(
   `<!DOCTYPE html>
   <html en = 'lang'>
