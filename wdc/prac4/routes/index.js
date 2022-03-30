@@ -11,15 +11,31 @@ router.get('/last.txt', function(req, res, next) {
   res.send(date);
 });
 
-var color = [];
+var color = ['red','yellow','green','blue'];
 
 var count = 0;
 
 router.get('/color.html', function(req, res, next) {
-  color = ['red', 'blue','green'];
+
   count++;
-  
-  if()
+
+  if(count == 1)
+  {
+    color = 'red'
+  }
+  else if(count == 2)
+  {
+    color = 'yellow'
+  }
+  else if(count == 3)
+  {
+    color = 'green'
+  }
+  else if(count == 1)
+  {
+    color = 'blue'
+  }
+
   res.send(
   `<!DOCTYPE html>
   <html en = 'lang'>
