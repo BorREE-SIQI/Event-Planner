@@ -14,6 +14,7 @@ router.get('/last.txt', function(req, res, next) {
 var color;
 
 router.get('/color.html', function(req, res, next) {
+  culour++
   res.send(
   `<!DOCTYPE html>
   <html en = 'lang'>
@@ -22,7 +23,7 @@ router.get('/color.html', function(req, res, next) {
     <title>Task3.2</title>
     </head>
     <body>
-      <h1 id = "color">${color}</h1>
+      <h1 id = "color" style="colour:red">${color}</h1>
       <script>
         var color = document.getElementById('color');
         color.style.color = color.innerText;
