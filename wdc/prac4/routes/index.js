@@ -16,7 +16,7 @@ var time = '';
 var timeShot = String(new Date());
 
 router.get('/log.html', function(req, res, next) {
-  time += timeShot;
+  time += timeShot + '\n';
   res.send(
     `<!DOCTYPE html>
     <html lang = 'en'>
