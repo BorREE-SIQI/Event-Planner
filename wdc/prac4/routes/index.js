@@ -13,8 +13,17 @@ router.get('/last.txt', function(req, res, next) {
 });
 
 router.get('/log.html', function(req, res, next) {
-  res.send(date);
-  
+  res.send(
+    `<!DOCTYPE html>
+    <html lang = 'en'>
+      <head>
+      <meta charset = "UTF-8">
+      <title>Task3.2</title>
+      </head>
+      <body>
+
+    `);
+
 });
 
 var color = ['red','yellow','green','blue'];
