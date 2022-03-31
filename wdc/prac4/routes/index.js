@@ -38,7 +38,7 @@ router.get('/color.html', function(req, res, next) {
 
   res.send(
   `<!DOCTYPE html>
-  <html>
+  <html lang = 'en'>
     <head>
     <meta charset = "UTF-8">
     <title>Task3.2</title>
