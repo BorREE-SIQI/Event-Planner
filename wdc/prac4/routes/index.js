@@ -16,7 +16,7 @@ var time = '';
 var timeShot = String(new Date());
 
 router.get('/log.html', function(req, res, next) {
-  time += timeShot + '\n';
+  time += '<li>' + timeShot + '</li>';
   res.send(
     `<!DOCTYPE html>
     <html lang = 'en'>
@@ -26,7 +26,7 @@ router.get('/log.html', function(req, res, next) {
       </head>
       <body>
       <ul>
-      <li>${time}</li>
+      ${time}
       </ul>
       </body>
       </html>`
