@@ -40,7 +40,8 @@ router.get('/first.html', function(req, res, next) {
   if(check ==0)
   {
     check++;
-  res.send(
+
+    res.send(
     `<!DOCTYPE html>
     <html lang = 'en'>
       <head>
@@ -50,7 +51,6 @@ router.get('/first.html', function(req, res, next) {
       <body>
       <h1>Welcome</h1>
       <a href = "/main.html"></a>
-      <p>Random Text</p>
       </body>
       </html>
       `);
@@ -69,8 +69,7 @@ router.get('/main.html', function(req, res, next) {
     res.redirect('/first.html');
     check++;
   }
-
-  else if(check ==1)
+  else
   {
     res.send(
       `<!DOCTYPE html>
@@ -81,7 +80,7 @@ router.get('/main.html', function(req, res, next) {
         </head>
         <body>
         <h1>My main site</h1>
-        <p>Random More Text</p>
+        <p>Random Text</p>
         </body>
         </html>
         `);
