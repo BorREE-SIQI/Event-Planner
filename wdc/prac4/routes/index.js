@@ -156,7 +156,7 @@ router.get('/color2.html', function(req, res, next) {
 
   count2++;
 
-  res.send(date);
+  res.send(color2);
 });
 
 module.exports = router;
