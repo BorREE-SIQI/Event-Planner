@@ -39,6 +39,11 @@ router.get('/first.html', function(req, res, next) {
   date=String(new Date());
 });
 
+router.get('/main.html', function(req, res, next) {
+  res.send(date);
+  date=String(new Date());
+});
+
 var color = ['red','yellow','green','blue'];
 
 var count = 0;
