@@ -37,7 +37,9 @@ router.get('/log.html', function(req, res, next) {
 var check = 0;
 
 router.get('/first.html', function(req, res, next) {
-  check++;
+  if(check ==0)
+  {
+    check++;
   res.send(
     `<!DOCTYPE html>
     <html lang = 'en'>
@@ -52,8 +54,13 @@ router.get('/first.html', function(req, res, next) {
       </body>
       </html>
       `);
+  }
 
+  else if(check ==1)
+  {
   res.redirect('/main.html');
+  }
+  
 });
 
 router.get('/main.html', function(req, res, next) {
