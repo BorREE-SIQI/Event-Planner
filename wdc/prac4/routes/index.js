@@ -17,24 +17,24 @@ var count = 0;
 
 router.get('/color.html', function(req, res, next) {
 
-  count++;
-
-  if(count%5 == 1)
+  if(count%4 == 0)
   {
     color = 'red'
   }
-  else if(count%5 == 2)
+  else if(count%4 == 1)
   {
     color = 'yellow'
   }
-  else if(count%5 == 3)
+  else if(count%4 == 2)
   {
     color = 'green'
   }
-  else if(count%5 == 4)
+  else if(count%4 == 3)
   {
     color = 'blue'
   }
+
+  count++;
 
   res.send(
   `<!DOCTYPE html>
