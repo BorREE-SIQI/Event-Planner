@@ -12,8 +12,11 @@ router.get('/last.txt', function(req, res, next) {
   date=String(new Date());
 });
 
+var time = '';
+var timeShot = string(new Date());
 
 router.get('/log.html', function(req, res, next) {
+  time += timeShot;
   res.send(
     `<!DOCTYPE html>
     <html lang = 'en'>
@@ -22,9 +25,12 @@ router.get('/log.html', function(req, res, next) {
       <title>Task3.3</title>
       </head>
       <body>
-      <li>
-
-    `);
+      <ul>
+      <li>${time}</li>
+      </ul>
+      </body>
+      </html>`
+      );
 
 });
 
