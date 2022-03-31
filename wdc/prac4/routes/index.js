@@ -14,7 +14,7 @@ router.get('/last.txt', function(req, res, next) {
 
 router.get('/log.html', function(req, res, next) {
   res.send(date);
-  date=String(new Date());
+  
 });
 
 var color = ['red','yellow','green','blue'];
