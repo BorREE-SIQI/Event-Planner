@@ -19,19 +19,19 @@ router.get('/color.html', function(req, res, next) {
 
   if(count%4 == 0)
   {
-    color = 'red'
+    color = 'red';
   }
   else if(count%4 == 1)
   {
-    color = 'yellow'
+    color = 'yellow';
   }
   else if(count%4 == 2)
   {
-    color = 'green'
+    color = 'green';
   }
   else if(count%4 == 3)
   {
-    color = 'blue'
+    color = 'blue';
   }
 
   count++;
