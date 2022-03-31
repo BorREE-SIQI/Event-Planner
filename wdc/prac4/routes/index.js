@@ -34,8 +34,26 @@ router.get('/log.html', function(req, res, next) {
 
 });
 
+var check = 0;
+
 router.get('/first.html', function(req, res, next) {
-  
+  check++;
+  res.send(
+    `<!DOCTYPE html>
+    <html lang = 'en'>
+      <head>
+      <meta charset = "UTF-8">
+      <title>Task3.2</title>
+      </head>
+      <body>
+      <h1>Welcome</h1>
+      <a href = "/main.html">main.html</a>
+      <p>Random Text</p>
+      </body>
+      </html>
+      `);
+
+  res.redirect('/main.html');
 });
 
 router.get('/main.html', function(req, res, next) {
