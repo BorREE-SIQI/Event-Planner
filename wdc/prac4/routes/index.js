@@ -133,9 +133,7 @@ router.get('/color.html', function(req, res, next) {
 });
 
 var color2 = ['red','yellow','green','blue'];
-
 var count2 = 0;
-
 router.get('/color2.html', function(req, res, next) {
   if(count2%4 == 0)
   {
