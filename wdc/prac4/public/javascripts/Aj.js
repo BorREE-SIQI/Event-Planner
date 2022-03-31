@@ -3,9 +3,9 @@ function load() {
     xhttp.onload = function() {
     //xhttp.onreadystatechange = function() {
     //   if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("para").innerHTML= "This page was last viewed " + String(new Date());
+        document.getElementById("para").innerHTML= "This page was last viewed ";//+ String(new Date());
     //}
     };
-    xhttp.open("GET", "/last.txt";
+    xhttp.open("GET", "/last.txt");
     xhttp.send();
   }
