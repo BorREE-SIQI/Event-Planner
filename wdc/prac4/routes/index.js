@@ -13,7 +13,7 @@ router.get('/last.txt', function(req, res, next) {
 });
 
 var time = '';
-var timeShot = string(new Date());
+var timeShot = String(new Date());
 
 router.get('/log.html', function(req, res, next) {
   time += timeShot;
