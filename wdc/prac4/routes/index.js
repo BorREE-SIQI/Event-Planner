@@ -132,7 +132,30 @@ router.get('/color.html', function(req, res, next) {
   );
 });
 
+var color2 = ['red','yellow','green','blue'];
+
+var count2 = 0;
+
 router.get('/color2.html', function(req, res, next) {
+  if(count2%4 == 0)
+  {
+    color2 = 'red';
+  }
+  else if(count2%4 == 1)
+  {
+    color2 = 'yellow';
+  }
+  else if(count2%4 == 2)
+  {
+    color2 = 'green';
+  }
+  else if(count2%4 == 3)
+  {
+    color2 = 'blue';
+  }
+
+  count2++;
+
   res.send(date);
 });
 
