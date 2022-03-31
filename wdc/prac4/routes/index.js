@@ -49,7 +49,7 @@ router.get('/first.html', function(req, res, next) {
       </head>
       <body>
       <h1>Welcome</h1>
-      <a href = "/main.html">main.html</a>
+      <a href = "/main.html"></a>
       <p>Random Text</p>
       </body>
       </html>
