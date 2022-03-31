@@ -5,6 +5,6 @@ function load() {
         document.getElementById("para").innerHTML= "This page was last viewed " + String(new Date());
       }
     };
-    xhttp.open("GET", "/last", true);
+    xhttp.open("GET", "/last.txt", true);
     xhttp.send();
   }
