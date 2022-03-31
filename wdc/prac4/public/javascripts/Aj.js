@@ -8,3 +8,8 @@ function load() {
   loadTime.open("GET", "/last.txt");
   loadTime.send();
   }
+
+  function loadColor()
+  {
+      
+  }
