@@ -12,6 +12,7 @@ router.get('/last.txt', function(req, res, next) {
   date=String(new Date());
 });
 
+
 router.get('/log.html', function(req, res, next) {
   res.send(
     `<!DOCTYPE html>
