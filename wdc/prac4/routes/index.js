@@ -13,9 +13,9 @@ router.get('/last.txt', function(req, res, next) {
 });
 
 var time = '';
-var timeShot = String(new Date());
 
 router.get('/log.html', function(req, res, next) {
+  var timeShot = String(new Date());
   time += '<li>' + timeShot + '</li>';
   res.send(
     `<!DOCTYPE html>
