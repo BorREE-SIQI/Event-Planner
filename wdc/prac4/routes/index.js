@@ -34,12 +34,12 @@ router.get('/log.html', function(req, res, next) {
 
 });
 
-var check = 0;
+var check_first = 0;
 
 router.get('/first.html', function(req, res, next) {
-  if(check ==0)
+  if(check_first ==0)
   {
-    check++;
+    check_first++;
 
     res.send(
     `<!DOCTYPE html>
@@ -63,11 +63,13 @@ router.get('/first.html', function(req, res, next) {
 
 });
 
+var check_main = 0;
+
 router.get('/main.html', function(req, res, next) {
-  if(check == 0)
+  if(check_main == 0)
   {
     res.redirect('/first.html');
-    check++;
+    check_main++;
   }
   else
   {
