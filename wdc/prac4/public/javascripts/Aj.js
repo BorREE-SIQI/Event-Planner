@@ -6,6 +6,6 @@ function load() {
         document.getElementById("para").innerHTML= "This page was last viewed ";//+ String(new Date());
     }
     };
-    xhttp.open("GET", "/last.txt");
+    xhttp.open("GET", "/last.txt", true);
     xhttp.send();
   }
