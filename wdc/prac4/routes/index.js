@@ -35,8 +35,7 @@ router.get('/log.html', function(req, res, next) {
 });
 
 router.get('/first.html', function(req, res, next) {
-  res.send(date);
-  date=String(new Date());
+  
 });
 
 router.get('/main.html', function(req, res, next) {
