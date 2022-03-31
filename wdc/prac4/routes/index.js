@@ -18,9 +18,10 @@ router.get('/log.html', function(req, res, next) {
     <html lang = 'en'>
       <head>
       <meta charset = "UTF-8">
-      <title>Task3.2</title>
+      <title>Task3.3</title>
       </head>
       <body>
+      <li>
 
     `);
 
