@@ -5,10 +5,11 @@ var router = express.Router();
 // router.get('/', function(req, res, next) {
 //   res.render('index', { title: 'Express' });
 // });
-var date = new Date();
+var date
 
 router.get('/last.txt', function(req, res, next) {
   res.send(date);
+  date=String(new Date());
 });
 
 var color = ['red','yellow','green','blue'];
