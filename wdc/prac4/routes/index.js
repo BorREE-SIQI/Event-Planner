@@ -132,4 +132,8 @@ router.get('/color.html', function(req, res, next) {
   );
 });
 
+router.get('/color2.html', function(req, res, next) {
+  res.send(date);
+});
+
 module.exports = router;
