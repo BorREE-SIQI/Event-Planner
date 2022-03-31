@@ -20,6 +20,6 @@ function load() {
         heading.style.color = this.responseText;
     }
   };
-  lc.open("GET", "/color2.html");
+  lc.open("GET", "/color.txt");
   lc.send();
   }
