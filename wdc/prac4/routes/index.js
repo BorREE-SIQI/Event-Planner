@@ -60,12 +60,32 @@ router.get('/first.html', function(req, res, next) {
   {
   res.redirect('/main.html');
   }
-  
+
 });
 
 router.get('/main.html', function(req, res, next) {
-  res.send(date);
-  date=String(new Date());
+  if(check == 0)
+  {
+    res.redirect('/first.html');
+    check++;
+  }
+
+  else if(check ==1)
+  {
+    res.send(
+      `<!DOCTYPE html>
+      <html lang = 'en'>
+        <head>
+        <meta charset = "UTF-8">
+        <title>Task3.2</title>
+        </head>
+        <body>
+        <h1>My main site</h1>
+        <p>Random More Text</p>
+        </body>
+        </html>
+        `);
+  }
 });
 
 var color = ['red','yellow','green','blue'];
