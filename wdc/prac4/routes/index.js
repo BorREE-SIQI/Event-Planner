@@ -50,13 +50,13 @@ router.get('/first.html', function(req, res, next) {
       </head>
       <body>
       <h1>Welcome</h1>
-      <a href = "/main.html"></a>
+      <a href = "/main.html">Link</a>
       </body>
       </html>
       `);
   }
 
-  else if(check ==1)
+  else
   {
   res.redirect('/main.html');
   }
