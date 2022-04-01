@@ -168,6 +168,20 @@ router.get('/content.ajax', function(req, res, next) {
   {
   res.status(403);
   }
+  else
+  {
+    res.send(`
+    <!DOCTYPE html>
+    <html lang = 'en'>
+      <head>
+      <meta charset = "UTF-8">
+      <title>Task3.2</title>
+      </head>
+      <body>
+        <p>
+      </body>
+    </html>`)
+  }
 });
 
 module.exports = router;
