@@ -173,7 +173,7 @@ router.get('/content.ajax', function(req, res, next) {
     res.send(`
         <p>Welcome</p>
         <p>You have already accepted terms and conditions</p>
-    `)
+    `);
   }
 });
 
