@@ -28,8 +28,11 @@ function load() {
     var aut = new XMLHttpRequest();
     aut.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("para").innerHTML = "This page was last viewed "+this.responseText;
+        document.getElementById("body").innerHTML += this.responseText;
     }
+    if (this.readyState == 4 && this.status == 403) {
+      document.getElementById("body").innerHTML += this.responseText;
+  }
   };
   aut.open("GET", "/content.ajax",true);
   aut.send();
