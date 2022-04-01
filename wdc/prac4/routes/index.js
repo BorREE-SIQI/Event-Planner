@@ -171,8 +171,8 @@ router.get('/content.ajax', function(req, res, next) {
   else
   {
     res.send(`
-        <p>Terms</p>
-        <p>Conditions</p>
+        <p>Welcome</p>
+        <p>You have already done verification</p>
     `)
   }
 });
