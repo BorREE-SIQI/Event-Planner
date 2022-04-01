@@ -157,8 +157,17 @@ router.get('/color.txt', function(req, res, next) {
   res.send(color2);
 });
 
+var v = 0;
 router.get('/accept', function(req, res, next) {
-  res.send();
+  res.status(200);
+  v++;
+});
+
+router.get('/content.ajax', function(req, res, next) {
+  if(v==0)
+  {
+  res.status(403);
+  }
 });
 
 module.exports = router;
