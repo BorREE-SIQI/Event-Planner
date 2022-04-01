@@ -23,3 +23,14 @@ function load() {
   lc.open("GET", "/color.txt");
   lc.send();
   }
+
+  function right() {
+    var aut = new XMLHttpRequest();
+    aut.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("para").innerHTML = "This page was last viewed "+this.responseText;
+    }
+  };
+  aut.open("GET", "/content.ajax");
+  aut.send();
+  }
