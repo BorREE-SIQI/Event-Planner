@@ -41,12 +41,12 @@ function load() {
 
   function verify()
   {
-    var loadTime = new XMLHttpRequest();
-    loadTime.onreadystatechange = function() {
+    var b = new XMLHttpRequest();
+    b.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("para").innerHTML = "This page was last viewed "+this.responseText;
+        document.getElementById("para").innerHTML = this.responseText;
     }
   };
-  loadTime.open("GET", "/last.txt");
-  loadTime.send();
+  b.open("GET", "/accept");
+  b.send();
   }
