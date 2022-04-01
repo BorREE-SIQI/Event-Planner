@@ -31,6 +31,6 @@ function load() {
         document.getElementById("para").innerHTML = "This page was last viewed "+this.responseText;
     }
   };
-  aut.open("GET", "/content.ajax");
+  aut.open("GET", "/content.ajax",true);
   aut.send();
   }
