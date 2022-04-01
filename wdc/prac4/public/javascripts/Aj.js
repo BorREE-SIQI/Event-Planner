@@ -57,7 +57,7 @@ function load() {
 
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                console.log(this.responseText);
+              document.getElementById("important").innerHTML = this.responseText;
             }
         };
 
@@ -72,7 +72,7 @@ function load() {
 
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                console.log(this.responseText);
+              document.getElementById("important").innerHTML = this.responseText;
             }
         };
 
@@ -86,7 +86,7 @@ function load() {
 
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                console.log(this.responseText);
+              document.getElementById("important").innerHTML = this.responseText;
             }
         };
 
