@@ -31,7 +31,8 @@ function load() {
         document.getElementById("body").innerHTML += this.responseText;
     }
     if (this.readyState == 4 && this.status == 403) {
-      document.getElementById("body").innerHTML += this.responseText;
+      var a = document.getElementById("option");
+      a.style.display = "block";
   }
   };
   aut.open("GET", "/content.ajax",true);
