@@ -159,7 +159,7 @@ router.get('/color.txt', function(req, res, next) {
 
 var v = 0;
 router.get('/accept', function(req, res, next) {
-  res.status(200);
+  res.status(200).send();
   v++;
 });
 
