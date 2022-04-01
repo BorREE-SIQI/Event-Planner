@@ -182,7 +182,10 @@ router.get('/contact.ajax', function(req, res, next) {
 });
 
 router.get('/search.ajax', function(req, res, next) {
-  res.send(date);
+  res.send(`
+  <input type="text">
+  <button>search</button>
+  `);
 });
 
 router.get('/last.txt', function(req, res, next) {
