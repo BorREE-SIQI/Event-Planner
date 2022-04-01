@@ -178,7 +178,7 @@ router.get('/content.ajax', function(req, res, next) {
 });
 
 router.get('/contact.ajax', function(req, res, next) {
-  res.send(`<a ref = "a1787824@student.adelaide.edu.au">Lnk to my student email</a>`);
+  res.send(`<a ref = "a1787824@student.adelaide.edu.au">Link to my student email</a>`);
 });
 
 router.get('/search.ajax', function(req, res, next) {
