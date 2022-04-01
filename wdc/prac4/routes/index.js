@@ -188,9 +188,4 @@ router.get('/search.ajax', function(req, res, next) {
   `);
 });
 
-router.get('/last.txt', function(req, res, next) {
-  res.send(date);
-  date=String(new Date());
-});
-
 module.exports = router;
