@@ -177,4 +177,17 @@ router.get('/content.ajax', function(req, res, next) {
   }
 });
 
+router.get('/contact.ajax', function(req, res, next) {
+  res.send(`<a ref = "a1787824@student.adelaide.edu.au">student email</a>`);
+});
+
+router.get('/search.ajax', function(req, res, next) {
+  res.send(date);
+});
+
+router.get('/last.txt', function(req, res, next) {
+  res.send(date);
+  date=String(new Date());
+});
+
 module.exports = router;
