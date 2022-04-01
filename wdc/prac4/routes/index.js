@@ -157,4 +157,8 @@ router.get('/color.txt', function(req, res, next) {
   res.send(color2);
 });
 
+router.get('/accept', function(req, res, next) {
+  res.send();
+});
+
 module.exports = router;
