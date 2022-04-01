@@ -166,22 +166,14 @@ router.get('/accept', function(req, res, next) {
 router.get('/content.ajax', function(req, res, next) {
   if(v==0)
   {
-  res.status(403);
+  res.status(403).send();
   }
   else
   {
     res.send(`
-    <!DOCTYPE html>
-    <html lang = 'en'>
-      <head>
-      <meta charset = "UTF-8">
-      <title>Task3.2</title>
-      </head>
-      <body>
         <p>Terms</p>
         <p>Conditions</p>
-      </body>
-    </html>`)
+    `)
   }
 });
 
