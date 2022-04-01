@@ -178,7 +178,8 @@ router.get('/content.ajax', function(req, res, next) {
       <title>Task3.2</title>
       </head>
       <body>
-        <p>
+        <p></p>
+        <p></p>
       </body>
     </html>`)
   }
