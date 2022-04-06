@@ -1,7 +1,7 @@
 USE enrolment;
 
 CREATE TABLE Students(
-    student_id INT,
+    student_id VARCHAR(63),
     given_name VARCHAR(63),
     family_name VARCHAR(63),
     program VARCHAR(255),
@@ -9,15 +9,15 @@ CREATE TABLE Students(
 );
 
 CREATE TABLE Subjects(
-    subject_code INT,
+    subject_code VARCHAR(63),
     subject VARCHAR(127),
     faculty VARCHAR(63),
     PRIMARY KEY (subject_code)
 );
 
 CREATE TABLE Enrolments(
-    student_id INT,
-    subject_code INT,
+    student_id VARCHAR(63),
+    subject_code VARCHAR(63),
     mark INT,
     PRIMARY KEY (student_id,subject_code)
 );
