@@ -1,3 +1,3 @@
-USE enrolment
+USE enrolment;
 
-CREATE TABLE Students()
+CREATE TABLE Students();
