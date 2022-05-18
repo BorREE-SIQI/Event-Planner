@@ -49,7 +49,9 @@ router.post('/combine', function(req, res, next) {
 
   var a = req.body.suffix;
   var b = req.body.lines;
-  res.send(b+a);
+
+  while(b)
+  res.send(b[0]+a);
 
 });
 
