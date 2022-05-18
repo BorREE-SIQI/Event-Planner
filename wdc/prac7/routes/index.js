@@ -19,10 +19,12 @@ router.get('/brew', function(req, res, next) {
 });
 
 var count = 0;
+var arr = {};
 
 router.post('/pass-it-on', function(req, res, next) {
 
   var p = req.body.message;
+  arr.push(p);
 
   if(!p)
   {
@@ -35,7 +37,7 @@ router.post('/pass-it-on', function(req, res, next) {
   }
   else if(p && count > 0)
   {
-    res.send
+    res.send(arr)
   }
 
 });
