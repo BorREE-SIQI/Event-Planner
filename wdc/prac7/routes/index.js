@@ -12,6 +12,10 @@ router.get('/brew', function(req, res, next) {
   {
     res.send(418);
   }
+  else
+  {
+    res.send(400)
+  }
 });
 
 module.exports = router;
