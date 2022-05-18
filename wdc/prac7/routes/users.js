@@ -9,7 +9,6 @@ router.post('/*', function(req, res, next) {
   else
   {
     res.end();
-    next();
   }
 });
 
