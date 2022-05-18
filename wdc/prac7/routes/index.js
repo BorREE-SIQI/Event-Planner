@@ -19,7 +19,7 @@ router.get('/brew', function(req, res, next) {
 });
 
 var count = 0;
-var arr = {};
+var arr = [];
 
 router.post('/pass-it-on', function(req, res, next) {
 
