@@ -8,7 +8,7 @@ router.post('/*', function(req, res, next) {
   }
   else
   {
-    res.send('hii');
+    res.end();
     next();
   }
 });
