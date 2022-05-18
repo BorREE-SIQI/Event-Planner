@@ -26,6 +26,12 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.use('users'function(req, res, next) {
+  index++;
+  console.log('Received '+index+' requests');
+  next();
+});
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
