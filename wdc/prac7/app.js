@@ -19,6 +19,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+var index = 0;
+app.use(function(req, res, next) {
+  index++;
+  console.log('Received '+index+' requests');
+  next();
+});
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 

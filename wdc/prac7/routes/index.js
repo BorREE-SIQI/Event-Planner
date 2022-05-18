@@ -10,11 +10,11 @@ router.get('/brew', function(req, res, next) {
   }
   else if(d == 'coffee')
   {
-    res.send(418);
+    res.sendStatus(418);
   }
   else
   {
-    res.send(400)
+    res.sendStatus(400)
   }
 });
 
@@ -51,10 +51,11 @@ router.post('/combine', function(req, res, next) {
   var b = req.body.lines;
   var len = b.length;
 
-  for (let i = 0; i < len; i++)
-  {
-    res.send(b[i]+a);
-  }
+  res.send(b[0]+a+'\n'+b[1]+a+'\n'+b[2]+a);
+  // for (let i = 0; i < len; i++)
+  // {
+  //   res.send(b[i]+a);
+  // }
 
 });
 
