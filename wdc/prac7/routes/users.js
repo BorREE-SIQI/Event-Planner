@@ -7,7 +7,9 @@ router.post('/addpost', function(req, res, next) {
 });
 
 router.post('/*', function(req, res, next) {
-  console.log("POST from a user");
-  res.send("hiii");
+  if(!req.get('Content-Type'))
+  {
+    res.sendStatus(412);
+  }
 });
 module.exports = router;
