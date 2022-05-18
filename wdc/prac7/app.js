@@ -26,7 +26,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/users'function(req, res, next) {
+app.use('/users',function(req, res, next) {
   console.log('Received '+index+' requests');
   next();
 });
