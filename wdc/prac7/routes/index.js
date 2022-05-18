@@ -18,4 +18,10 @@ router.get('/brew', function(req, res, next) {
   }
 });
 
+router.post('/pass-it-on', function(req, res, next) {
+
+    res.send(400)
+
+});
+
 module.exports = router;
