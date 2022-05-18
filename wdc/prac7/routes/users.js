@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.post(function(req, res, next) {
-  if(!req.get('Content-Type') || !req.get("application/json"))
+  if(!req.get('Content-Type') || !req.headers["application/json"])
   {
     res.sendStatus(412);
   }
