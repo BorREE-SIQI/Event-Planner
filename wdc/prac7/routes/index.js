@@ -31,12 +31,12 @@ router.post('/pass-it-on', function(req, res, next) {
   }
   else
   {
-    arr.push(p);
+    //arr.push(p);
 
     if(count = 0)
     {
-    count++;
-    res.send('first');
+      res.send('first');
+      count++;
     }
   else if(count > 0)
     {
