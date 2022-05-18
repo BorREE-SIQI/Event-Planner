@@ -11,5 +11,9 @@ router.post('/*', function(req, res, next) {
   {
     res.sendStatus(412);
   }
+  else
+  {
+    res.end();
+  }
 });
 module.exports = router;
