@@ -50,7 +50,8 @@ router.post('/combine', function(req, res, next) {
   var a = req.body.suffix;
   var b = req.body.lines;
 
-  res.send("successful")
+  res.send(a);
+  res.send(b);
 
 
 });
