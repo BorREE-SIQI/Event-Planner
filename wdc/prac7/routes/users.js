@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.post('/addpost', function(req, res, next) {
   console.log("POST from a user");
-  next();
+  res.send("hiii");
 });
 
 module.exports = router;
