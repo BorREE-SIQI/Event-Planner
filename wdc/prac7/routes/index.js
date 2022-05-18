@@ -39,7 +39,7 @@ router.post('/pass-it-on', function(req, res, next) {
     }
   else if(count > 0)
     {
-    res.send('arr[count-1]');
+    res.send(arr[count-1]);
     count++;
     }
 
