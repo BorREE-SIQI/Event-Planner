@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/brew', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  var d = req.query.drink;
+  if(d == "tea")
 });
 
 module.exports = router;
