@@ -32,7 +32,7 @@ router.post('/pass-it-on', function(req, res, next) {
 
     arr.push(p);
 
-    if(count = 0)
+    if(count == 0)
     {
       res.send('first');
       count++;
