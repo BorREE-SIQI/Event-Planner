@@ -30,16 +30,19 @@ router.post('/pass-it-on', function(req, res, next) {
   {
     res.send(400);
   }
-  else if(p && count = 0)
+  else if(p)
   {
+    if(count = 0)
+    {
     count++;
     res.send('first');
   }
-  else if(p && count > 0)
+  else if(count > 0)
   {
     res.send(arr[count-1]);
     count++;
   }
+}
 
 });
 
