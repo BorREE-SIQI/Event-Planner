@@ -13,7 +13,7 @@ router.post('/*', function(req, res, next) {
   }
   else
   {
-    next();
+    res.send('hii');
   }
 });
 module.exports = router;
