@@ -64,7 +64,7 @@ router.get('/cookie', function(req, res, next) {
 
     if(!c)
     {
-      res.cookie('task3_1', 1);
+      res.cookie('task3_1', '1');
     }
     else
     {
