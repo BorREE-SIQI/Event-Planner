@@ -60,11 +60,11 @@ router.post('/combine', function(req, res, next) {
 });
 
 router.get('/cookie', function(req, res, next) {
-    var c = res.cookie('task3_1', '1');
+    var c = req.cookies.task3_1;
 
     if(!c)
     {
-      
+      res.cookie('task3_1', '1');
     }
 
 });
