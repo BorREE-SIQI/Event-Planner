@@ -68,8 +68,10 @@ router.get('/cookie', function(req, res, next) {
     }
     else
     {
-      res.cookie('task3_1', 'c+1');
+      res.cookie('task3_1', c+1);
     }
+
+    e
 
 });
 
