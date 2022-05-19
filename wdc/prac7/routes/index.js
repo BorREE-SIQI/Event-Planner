@@ -59,5 +59,15 @@ router.post('/combine', function(req, res, next) {
 
 });
 
+router.get('/cookie', function(req, res, next) {
+    var c = res.cookie('task3_1', '1');
+
+    if(!c)
+    {
+      
+    }
+
+});
+
 
 module.exports = router;
