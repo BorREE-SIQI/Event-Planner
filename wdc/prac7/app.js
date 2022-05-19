@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(session({                             //           //
-  secret: "a string of your choice",          //           //
+  secret: '7777777ssssqqq',          //           //
   resave: false,                              // THIS CODE //
   saveUninitialized: true,                    //           //
   cookie: { secure: false }                   //           //
