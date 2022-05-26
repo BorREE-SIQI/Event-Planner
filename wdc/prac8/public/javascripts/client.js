@@ -2,7 +2,7 @@ function add() {
 
   let actor = {
     first_name: document.getElementsById("actor-first-name").value,
-    last_name: document.getElementsById("actor-last-name").value,
+    last_name: document.getElementsById("actor-last-name").value
   };
 
     var xhttp = new XMLHttpRequest();
