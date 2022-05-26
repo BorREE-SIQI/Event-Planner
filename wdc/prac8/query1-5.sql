@@ -1,3 +1,4 @@
 SELECT length FROM film
-  WHERE film_id = (SELECT actor_id FROM TableB
-                     WHERE column2 = 'a');
+  WHERE film_id = (SELECT film_id FROM film_actor
+                     WHERE actor_id = (SELECT actor_id FROM actor
+                     WHERE first_name = 'a'));
