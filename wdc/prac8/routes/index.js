@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.post('/newActor', function(req, res, next) {
   var username = req.query.username; // if username was a field in the request URL
-    var query = "SELECT date,contents FROM posts WHERE author = ?";
+    var query = "SELECT first_name last_name FROM actor WHERE author = ?";
     connection.query(query, [username], function(err, rows, fields) {
       connection.release(); // release connection
       if (err) {
