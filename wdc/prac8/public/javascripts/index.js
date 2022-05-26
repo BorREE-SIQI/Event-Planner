@@ -12,5 +12,8 @@ function add() {
     }
   };
   xhttp.open("POST", "/newActor");
-  xhttp.send();
+  // Set content type to JSON
+  xhttp.setRequestHeader("Content-type", "application/json");
+  // Send request
+  xhttp.send(JSON.stringify(actor));
   }
