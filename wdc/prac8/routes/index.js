@@ -1,9 +1,17 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.post('/newActor', function(req, res, next) {
+  var username = req.query.username; // if username was a field in the request URL
+    var query = "SELECT date,contents FROM posts WHERE author = ?";
+    connection.query(query, [username], function(err, rows, fields) {
+      connection.release(); // release connection
+      if (err) {
+        res.sendStatus(500);
+        return;
+      }
+      res.json(rows); //send response
+    });
 });
 
 module.exports = router;
