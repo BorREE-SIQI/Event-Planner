@@ -7,13 +7,13 @@ var mysql = require('mysql');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var app = express();
+
 // create a 'pool' (group) of connections to be used for connecting with our SQL server
 var dbConnectionPool = mysql.createPool({
     host: 'localhost',
     database: 'sakila'
   });
-
-var app = express();
 
 app.use(function(req, res, next) {
     req.pool = dbConnectionPool;
