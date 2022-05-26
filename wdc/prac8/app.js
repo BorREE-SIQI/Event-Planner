@@ -2,6 +2,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mysql = require('mysql');
+// create a 'pool' (group) of connections to be used for connecting with our SQL server
+var dbConnectionPool = mysql.createPool({
+    host: 'localhost',
+    database: 'blog'
+  });
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
