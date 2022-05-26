@@ -11,6 +11,6 @@ function add() {
         alert("Add Successful");
     }
   };
-  loadTime.open("GET", "/last.txt");
-  loadTime.send();
+  xhttp.open("POST", "/newActor");
+  xhttp.send();
   }
