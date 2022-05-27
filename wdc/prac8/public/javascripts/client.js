@@ -26,6 +26,9 @@ function add() {
       if (this.readyState == 4 && this.status == 200) {
         document.getElementById("first").innerHTML =
         this.responseText;
+
+        document.getElementById("last").innerHTML =
+        this.last_name.responseText;
       }
     };
     xhttp.open("GET", "/showActor");
