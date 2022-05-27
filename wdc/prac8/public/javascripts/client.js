@@ -25,10 +25,10 @@ function add() {
       xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         document.getElementById("first").innerHTML =
-        this.responseText;
+        this.responseText[0];
 
         document.getElementById("last").innerHTML =
-        this.last_name.responseText;
+        this.responseText[1];
       }
     };
     xhttp.open("GET", "/showActor");
