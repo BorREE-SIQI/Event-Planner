@@ -40,7 +40,7 @@ router.get('/showActor', function (req, res, next) {
         console.log(err);
         return;
       }
-      res.sendStatus(200);
+      res.json(rows);
     });
   });
 });
