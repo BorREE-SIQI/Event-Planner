@@ -11,7 +11,7 @@ function add() {
         alert("Add Successful");
     }
   };
-  xhttp.open("POST", "/newActor");
+  xhttp.open("POST", "/actors.html");
   // Set content type to JSON
   xhttp.setRequestHeader("Content-type", "application/json");
   // Send request

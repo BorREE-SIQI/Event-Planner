@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.post('/newActor', function (req, res, next) {
+router.post('/actors.html', function (req, res, next) {
   //Connect to the database
   req.pool.getConnection( function(err,connection) {
     if (err) {
