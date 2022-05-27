@@ -17,3 +17,16 @@ function add() {
   // Send request
   xhttp.send(JSON.stringify(actor));
   }
+
+
+  function show() {
+
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          alert("Show Successful");
+      }
+    };
+    xhttp.open("GET", "/actors.html");
+    xhttp.send();
+    }
