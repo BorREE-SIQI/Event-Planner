@@ -24,11 +24,14 @@ function add() {
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
+
+        let obj = JSON.parse(this.responseText);
+
         document.getElementById("first").innerHTML =
-        this.responseText[0];
+        obj.first_name;
 
         document.getElementById("last").innerHTML =
-        this.responseText[1];
+        obj.last_name;
       }
     };
     xhttp.open("GET", "/showActor");
