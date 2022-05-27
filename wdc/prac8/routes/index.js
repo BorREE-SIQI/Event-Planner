@@ -19,7 +19,6 @@ router.post('/newActor', function (req, res, next) {
         return;
       }
       res.sendStatus(200);
-      res.end(rows); //send response
     });
   });
 });
