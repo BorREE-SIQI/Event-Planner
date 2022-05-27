@@ -5,7 +5,6 @@ router.post('/newActor', function (req, res, next) {
   req.pool.getConnection(function (err, connection) {
     if (error) {
       res.sendStatus(500);
-      console.log(error);
       return;
     }
 
