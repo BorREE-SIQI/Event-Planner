@@ -1,8 +1,8 @@
 function add() {
 
   let actor = {
-    "first_name": document.getElementById("actor-first-name").value,
-    "last_name": document.getElementById("actor-last-name").value
+    first_name: document.getElementById("actor-first-name").value,
+    last_name: document.getElementById("actor-last-name").value
   };
 
     var xhttp = new XMLHttpRequest();
