@@ -11,7 +11,7 @@ var app = express();
 
 // create a 'pool' (group) of connections to be used for connecting with our SQL server
 var dbConnectionPool = mysql.createPool({
-    host: 'localhost',
+    host: '127.0.0.1',
     database: 'sakila'
   });
 
