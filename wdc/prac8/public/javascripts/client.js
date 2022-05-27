@@ -11,7 +11,7 @@ function add() {
         alert("Add Successful");
     }
   };
-  xhttp.open("POST", "/actors.html");
+  xhttp.open("POST", "/newActor");
   // Set content type to JSON
   xhttp.setRequestHeader("Content-type", "application/json");
   // Send request
@@ -19,14 +19,14 @@ function add() {
   }
 
 
-  function show() {
+  // function show() {
 
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-          alert("Show Successful");
-      }
-    };
-    xhttp.open("GET", "/actors.html");
-    xhttp.send();
-    }
+  //     var xhttp = new XMLHttpRequest();
+  //     xhttp.onreadystatechange = function() {
+  //     if (this.readyState == 4 && this.status == 200) {
+  //         alert("Show Successful");
+  //     }
+  //   };
+  //   xhttp.open("GET", "/newActor");
+  //   xhttp.send();
+  //   }
