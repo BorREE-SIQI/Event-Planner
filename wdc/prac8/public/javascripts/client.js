@@ -19,14 +19,14 @@ function add() {
   }
 
 
-  // function show() {
+  function show() {
 
-  //     var xhttp = new XMLHttpRequest();
-  //     xhttp.onreadystatechange = function() {
-  //     if (this.readyState == 4 && this.status == 200) {
-  //         alert("Show Successful");
-  //     }
-  //   };
-  //   xhttp.open("GET", "/newActor");
-  //   xhttp.send();
-  //   }
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+          alert("Show Successful");
+      }
+    };
+    xhttp.open("GET", "/showActor");
+    xhttp.send();
+    }
