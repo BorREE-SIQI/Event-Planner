@@ -15,6 +15,7 @@ router.post('/newActor', function (req, res, next) {
       connection.release(); // release connection
       if (err) {
         res.sendStatus(500);
+        console.log(err);
         return;
       }
       res.sendStatus(200);
