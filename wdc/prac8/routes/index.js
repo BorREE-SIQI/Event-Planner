@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 router.post('/newActor', function(req, res, next) {
-    req.pool.getConnection(function(err, connection))
+    req.pool.getConnection(function(err, connection)
     {
       if(error)
       {
@@ -21,7 +21,7 @@ router.post('/newActor', function(req, res, next) {
       res.sendStatus(200);
       res.json(rows); //send response
     });
-  }
+  })
 });
 
 module.exports = router;
