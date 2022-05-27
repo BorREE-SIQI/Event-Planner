@@ -28,10 +28,10 @@ function add() {
         let obj = JSON.parse(this.responseText);
 
         document.getElementById("first").innerHTML =
-        obj.first_name;
+        obj[0].first_name;
 
         document.getElementById("last").innerHTML =
-        obj.last_name;
+        obj[0].last_name;
       }
     };
     xhttp.open("GET", "/showActor");
