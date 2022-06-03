@@ -37,3 +37,11 @@ function add() {
     xhttp.open("GET", "/showActor");
     xhttp.send();
     }
+
+    var vueinst = new Vue({
+      el: '#main',
+      data: {
+          first: 'first ...',
+          last: 'last ...'
+      }
+  });
