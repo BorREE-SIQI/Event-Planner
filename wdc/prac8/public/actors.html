@@ -33,8 +33,16 @@
           </thead>
           <tbody>
               <tr>
-                  <td id = "first">{{ A.first }}</td>
-                  <td id = "last">{{ actor.last }}</td>
+                  <td id = "first">
+                    <li v-for="name in actors">
+                    {{ name.first }}
+                  </li>
+                </td>
+                  <td id = "last">
+                    <li v-for="name in actors">
+                    {{ name.last }}
+                  </li>
+                </td>
               </tr>
           </tbody>
         </table>
