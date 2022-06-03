@@ -31,16 +31,26 @@ function add() {
     xhttp.send();
     }
 
-    var vueinst = new Vue({
-      el: '#main',
-      data: {
-        actors: [
-            {first: 'first1',last: 'last1'},
-            {first: 'first2',last: 'last2'}
+  //   var vueinst = new Vue({
+  //     el: '#main',
+  //     data: {
+  //       actors: [
+  //           {first: 'first1',last: 'last1'},
+  //           {first: 'first2',last: 'last2'}
 
-          ]
-      },
-      methods:{
-        
-      }
-  });
+  //         ]
+  //     },
+  //     methods:{
+
+  //     }
+  // });
+
+  var example1 = new Vue({
+    el: '#main',
+    data: {
+      actors: [
+        { first: 'first1',last: 'last1' },
+        { first: 'first2',last: 'last2' }
+      ]
+    }
+  })
