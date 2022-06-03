@@ -21,7 +21,7 @@
     </style>
   </head>
 
-  <body onload="prac8.show()">
+  <body onload="show()">
     <header><h1>Actors!</h1></header>
 
     <main class="pure-g" id="main">
@@ -37,9 +37,9 @@
           </thead>
           <tbody>
                     <tr>
-                    <li v-for="name in prac8.actors">
-                    <td>{{ name.first }}</td>
-                    <td>{{ name.last }}</td>
+                    <li>
+                    <td></td>
+                    <td></td>
                     </li>
                     </tr>
 
@@ -56,7 +56,7 @@
               <input type="text" id="actor-first-name" placeholder="First/Given Name" />
               <label for="actor-last-name">Last Name</label>
               <input type="text" id="actor-last-name" placeholder="First/Family Name" />
-              <button type="button" class="pure-button pure-button-primary" v-on:click = "prac8.add()">Add</button>
+              <button type="button" class="pure-button pure-button-primary" onclick = "add()">Add</button>
           </fieldset>
         </form>
       </aside>
