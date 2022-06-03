@@ -25,13 +25,6 @@ function add() {
       xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
 
-        let obj = JSON.parse(this.responseText);
-
-        document.getElementById("first").innerHTML =
-        obj[0].first_name;
-
-        document.getElementById("last").innerHTML =
-        obj[0].last_name;
       }
     };
     xhttp.open("GET", "/showActor");
