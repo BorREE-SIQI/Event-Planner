@@ -4,7 +4,8 @@ var prac8 = new Vue({
     actors: [
       { first: 'first1',last: 'last1' },
       { first: 'first2',last: 'last2' }
-    ]
+    ],
+    method:
   }
 })
 
