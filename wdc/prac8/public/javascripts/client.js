@@ -39,5 +39,8 @@ function add() {
             {first: 'first2',last: 'last2'}
 
           ]
+      },
+      methods:{
+        
       }
   });
