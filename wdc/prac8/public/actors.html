@@ -33,18 +33,14 @@
               </tr>
           </thead>
           <tbody>
-              <tr>
-                  <td id = "first">
+
                     <li v-for="name in actors">
-                    {{ name.first }}
+                      <tr>
+                    <td>{{ name.first }}</td>
+                    <td>{{name.last}}</td>
+                  </tr>
                   </li>
-                </td>
-                  <td id = "last">
-                    <li v-for="name in actors">
-                    {{ name.last }}
-                  </li>
-                </td>
-              </tr>
+
           </tbody>
         </table>
 
