@@ -35,7 +35,9 @@ function add() {
       el: '#main',
       data: {
         actors: [
-            {first: 'first ...',last: 'last ...'}
+            {first: 'first1',last: 'last1'},
+            {first: 'first2',last: 'last2'}
+
           ]
       }
   });
