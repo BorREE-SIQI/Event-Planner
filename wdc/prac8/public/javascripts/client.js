@@ -45,7 +45,7 @@ function add() {
   //     }
   // });
 
-  var example1 = new Vue({
+  var prac8 = new Vue({
     el: '#main',
     data: {
       actors: [
