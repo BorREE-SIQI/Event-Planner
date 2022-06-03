@@ -34,7 +34,6 @@ function add() {
     var vueinst = new Vue({
       el: '#main',
       data: {
-        actor: ACTOR[0],
           ACTOR: [
             {first: 'first ...',last: 'last ...'}
           ]
