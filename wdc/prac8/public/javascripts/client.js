@@ -1,3 +1,13 @@
+var prac8 = new Vue({
+  el: '#main',
+  data: {
+    actors: [
+      { first: 'first1',last: 'last1' },
+      { first: 'first2',last: 'last2' }
+    ]
+  }
+})
+
 function add() {
 
   let actor = {
@@ -46,12 +56,3 @@ function add() {
   //     }
   // });
 
-  var prac8 = new Vue({
-    el: '#main',
-    data: {
-      actors: [
-        { first: 'first1',last: 'last1' },
-        { first: 'first2',last: 'last2' }
-      ]
-    }
-  })
