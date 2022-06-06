@@ -18,7 +18,8 @@ CREATE TABLE users (
 
 CREATE TABLE creating_trip (
     users_email VARCHAR(127),
-    event_ID INT NOT NULL
-    PRIMARY KEY (users_email)
+    event_ID INT,
+    FOREIGN KEY (users_email) REFERENCES users(users_email) ON DELETE SET NULL
+
 );
 
