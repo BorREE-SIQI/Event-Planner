@@ -18,7 +18,7 @@ CREATE TABLE users (
 
 CREATE TABLE creating_trip (
     users_email VARCHAR(127),
-    event_ID 
+    event_ID INT NOT NULL
     PRIMARY KEY (users_email)
 );
 
