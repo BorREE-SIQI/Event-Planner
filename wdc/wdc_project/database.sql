@@ -3,14 +3,22 @@ CREATE DATABASE 'database';
 USE 'database';
 
 CREATE TABLE system_admin (
-    admin_email VARCHAR(127),
+    admins_email VARCHAR(127),
     password VARCHAR(127),
-    PRIMARY KEY (admin_emial)
+    PRIMARY KEY (admins_email)
 );
 
-CREATE TABLE system_admin (
-    admin_email VARCHAR(127),
+CREATE TABLE users (
+    users_email VARCHAR(127),
     password VARCHAR(127),
-    PRIMARY KEY (admin_emial)
+    last_name VARCHAR(63),
+    first_name VARCHAR(63),
+    PRIMARY KEY (users_email)
+);
+
+CREATE TABLE creating_trip (
+    users_email VARCHAR(127),
+    event_ID 
+    PRIMARY KEY (users_email)
 );
 
