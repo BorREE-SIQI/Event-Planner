@@ -2,7 +2,7 @@ CREATE DATABASE myDatabase;
 
 USE myDatabase;
 
-CREATE TABLE system_admin (
+CREATE TABLE admin (
     email VARCHAR(127),
     password VARCHAR(127),
     PRIMARY KEY (email)
