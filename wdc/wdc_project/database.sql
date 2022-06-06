@@ -1,4 +1,4 @@
-CREATE DATABASE 'database';
+-- CREATE DATABASE 'database';
 
 USE 'database';
 
