@@ -28,6 +28,5 @@ CREATE TABLE creating_trip (
     event_ID INT,
     FOREIGN KEY (users_email) REFERENCES users(users_email) ON DELETE SET NULL,
     FOREIGN KEY (event_ID) REFERENCES events(ID) ON DELETE SET NULL
-
 );
 
