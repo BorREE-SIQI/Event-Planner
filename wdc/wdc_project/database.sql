@@ -3,13 +3,13 @@ CREATE DATABASE 'database';
 USE 'database';
 
 CREATE TABLE system_admin (
-    admins_email VARCHAR(127),
+    admins_email VARCHAR(127) UNIQUE,
     password VARCHAR(127),
     PRIMARY KEY (admins_email)
 );
 
 CREATE TABLE users (
-    users_email VARCHAR(127),
+    users_email VARCHAR(127) UNIQUE,
     password VARCHAR(127),
     last_name VARCHAR(63),
     first_name VARCHAR(63),
@@ -28,5 +28,11 @@ CREATE TABLE creating_trip (
     event_ID INT,
     FOREIGN KEY (users_email) REFERENCES users(users_email) ON DELETE SET NULL,
     FOREIGN KEY (event_ID) REFERENCES events(ID) ON DELETE SET NULL
+);
+
+CREATE TABLE availaility (
+    timestamp DATETIME,
+    event_ID INT,
+    FOREIGN KEY (event_ID) REFERENCES events(ID) ON DELETE CASCADE,
 );
 
