@@ -16,10 +16,18 @@ CREATE TABLE users (
     PRIMARY KEY (users_email)
 );
 
+CREATE TABLE events (
+    ID INT NOT NULL AUTO_INCREMENT,
+    event_name VARCHAR(127),
+    description VARCHAR(1207),
+    PRIMARY KEY (ID)
+);
+
 CREATE TABLE creating_trip (
     users_email VARCHAR(127),
     event_ID INT,
-    FOREIGN KEY (users_email) REFERENCES users(users_email) ON DELETE SET NULL
+    FOREIGN KEY (users_email) REFERENCES users(users_email) ON DELETE SET NULL,
+    FOREIGN KEY (event_ID) REFERENCES events(ID) ON DELETE SET NULL
 
 );
 
