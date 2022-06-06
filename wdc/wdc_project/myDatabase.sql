@@ -1,6 +1,6 @@
--- CREATE DATABASE 'database';
+CREATE DATABASE myDatabase;
 
-USE 'database';
+USE myDatabase;
 
 CREATE TABLE system_admin (
     admins_email VARCHAR(127) UNIQUE,
