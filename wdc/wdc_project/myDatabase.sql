@@ -2,10 +2,10 @@ CREATE DATABASE myDatabase;
 
 USE myDatabase;
 
-CREATE TABLE system_admin (
-    admins_email VARCHAR(127) UNIQUE,
+CREATE TABLE admin (
+    email VARCHAR(127) UNIQUE,
     password VARCHAR(127),
-    PRIMARY KEY (admins_email)
+    PRIMARY KEY (email)
 );
 
 CREATE TABLE users (
