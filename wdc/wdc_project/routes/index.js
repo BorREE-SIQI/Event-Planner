@@ -32,8 +32,30 @@ router.post('/searchEvent', function (req, res, next) {
       return;
     }
 
-    var query = "UPDATE users SET ;";
+    var query = "SELECT event_name description FROM events WHERE email = ?;";
     connection.query(query, [req.body.email], function (err, rows, fields) {
+      connection.release(); // release connection
+      if (err) {
+        res.sendStatus(500);
+        console.log(err);
+        return;
+      }
+      res.sendStatus(200);
+    });
+  });
+});
+
+router.post('/manageEvent', function (req, res, next) {
+  //Connect to the database
+  req.pool.getConnection( function(err,connection) {
+    if (err) {
+      res.sendStatus(500);
+      console.log(err);
+      return;
+    }
+
+    var query = "UPDATE users SET password = ? first_name = ? last_name = ? WHERE email = ?;";
+    connection.query(query, [req.body.password,req.body.password,req.body.first_name,req.body.last_name,req.body.email], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
         res.sendStatus(500);
