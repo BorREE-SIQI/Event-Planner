@@ -1,7 +1,7 @@
 function showUser()
 {
     let users = {
-        users_email: document.getElementsByName("userSearch").value
+        email: document.getElementsByName("userSearch").value
       };
 
         var xhttp = new XMLHttpRequest();
@@ -14,7 +14,7 @@ function showUser()
             document.getElementsByName("input-first") = this.response.first_name;
         }
       };
-      xhttp.open("POST", "/searchUser");
+      xhttp.open("POST", "/searchUsers");
       // Set content type to JSON
       xhttp.setRequestHeader("Content-type", "application/json");
       // Send request
@@ -24,8 +24,8 @@ function showUser()
 
 function showEvent()
 {
-  let users = {
-    users_email: document.getElementsByName("eventSearch").value
+  let events = {
+    email: document.getElementsByName("eventSearch").value
   };
 
     var xhttp = new XMLHttpRequest();
@@ -36,11 +36,11 @@ function showEvent()
         document.getElementsByName("input-d") = this.response.description;
     }
   };
-  xhttp.open("POST", "/searchEvent");
+  xhttp.open("POST", "/searchEvents");
   // Set content type to JSON
   xhttp.setRequestHeader("Content-type", "application/json");
   // Send request
-  xhttp.send(JSON.stringify(users));
+  xhttp.send(JSON.stringify(events));
 }
 
 function modifyUser()
@@ -58,7 +58,7 @@ function modifyUser()
         alert("change Successful");
     }
   };
-  xhttp.open("POST", "/manageEvent");
+  xhttp.open("POST", "/manageUsers");
   // Set content type to JSON
   xhttp.setRequestHeader("Content-type", "application/json");
   // Send request
@@ -67,11 +67,9 @@ function modifyUser()
 
 function modifyEvent()
 {
-  let users = {
-    email: document.getElementsByName("input-email").value,
-    password: document.getElementsByName("input-password").value,
-    first_name: document.getElementsByName("input-first").value,
-    last_name: document.getElementsByName("input-last").value
+  let events = {
+    event: document.getElementsByName("input-event").value,
+    d: document.getElementsByName("input-d").value,
   };
 
     var xhttp = new XMLHttpRequest();
@@ -80,9 +78,9 @@ function modifyEvent()
         alert("change Successful");
     }
   };
-  xhttp.open("POST", "/manageEvent");
+  xhttp.open("POST", "/manageEvents");
   // Set content type to JSON
   xhttp.setRequestHeader("Content-type", "application/json");
   // Send request
-  xhttp.send(JSON.stringify(users));
+  xhttp.send(JSON.stringify(events));
 }

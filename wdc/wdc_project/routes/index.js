@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.post('/searchUser', function (req, res, next) {
+router.post('/searchUsers', function (req, res, next) {
   //Connect to the database
   req.pool.getConnection( function(err,connection) {
     if (err) {
@@ -23,7 +23,7 @@ router.post('/searchUser', function (req, res, next) {
   });
 });
 
-router.post('/searchEvent', function (req, res, next) {
+router.post('/searchEvents', function (req, res, next) {
   //Connect to the database
   req.pool.getConnection( function(err,connection) {
     if (err) {
@@ -45,7 +45,7 @@ router.post('/searchEvent', function (req, res, next) {
   });
 });
 
-router.post('/manageEvent', function (req, res, next) {
+router.post('/manageUsers', function (req, res, next) {
   //Connect to the database
   req.pool.getConnection( function(err,connection) {
     if (err) {
