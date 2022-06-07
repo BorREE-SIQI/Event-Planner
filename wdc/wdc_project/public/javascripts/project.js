@@ -55,9 +55,29 @@ function modifyUser()
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        alert("search Successful");
-        document.getElementsByName("input-event") = this.response.event_name;
-        document.getElementsByName("input-d") = this.response.description;
+        alert("change Successful");
+    }
+  };
+  xhttp.open("POST", "/manageEvent");
+  // Set content type to JSON
+  xhttp.setRequestHeader("Content-type", "application/json");
+  // Send request
+  xhttp.send(JSON.stringify(users));
+}
+
+function modifyEvent()
+{
+  let users = {
+    email: document.getElementsByName("input-email").value,
+    password: document.getElementsByName("input-password").value,
+    first_name: document.getElementsByName("input-first").value,
+    last_name: document.getElementsByName("input-last").value
+  };
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        alert("change Successful");
     }
   };
   xhttp.open("POST", "/manageEvent");
