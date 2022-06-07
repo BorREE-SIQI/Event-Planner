@@ -1,7 +1,7 @@
 function showUser()
 {
     let users = {
-        users_email: document.getElementById("search").value
+        users_email: document.getElementsByName("userSearch").value
       };
 
         var xhttp = new XMLHttpRequest();
@@ -21,7 +21,7 @@ function showUser()
 function showEvent()
 {
   let users = {
-    users_email: document.getElementById("search").value
+    users_email: document.getElementsByName("eventSearch").value
   };
 
     var xhttp = new XMLHttpRequest();
@@ -30,7 +30,7 @@ function showEvent()
         alert("search Successful");
     }
   };
-  xhttp.open("POST", "/manageUser");
+  xhttp.open("POST", "/manageEvent");
   // Set content type to JSON
   xhttp.setRequestHeader("Content-type", "application/json");
   // Send request
