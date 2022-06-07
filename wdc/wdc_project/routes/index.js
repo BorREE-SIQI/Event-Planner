@@ -54,8 +54,8 @@ router.post('/manageUsers', function (req, res, next) {
       return;
     }
 
-    var query = "UPDATE users SET password = ? first_name = ? last_name = ? WHERE email = ?;";
-    connection.query(query, [req.body.password,req.body.password,req.body.first_name,req.body.last_name,req.body.email], function (err, rows, fields) {
+    var query = "UPDATE events SET event_name = ? description = ? WHERE email = ?;";
+    connection.query(query, [req.body.event,req.body.d,req.body.email], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
         res.sendStatus(500);
