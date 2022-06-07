@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.post('/manageUser', function (req, res, next) {
+router.post('/searchUser', function (req, res, next) {
   //Connect to the database
   req.pool.getConnection( function(err,connection) {
     if (err) {
@@ -23,7 +23,7 @@ router.post('/manageUser', function (req, res, next) {
   });
 });
 
-router.post('/manageEvent', function (req, res, next) {
+router.post('/searchEvent', function (req, res, next) {
   //Connect to the database
   req.pool.getConnection( function(err,connection) {
     if (err) {
@@ -32,7 +32,7 @@ router.post('/manageEvent', function (req, res, next) {
       return;
     }
 
-    var query = "SELECT event_name description FROM events WHERE email = ?;";
+    var query = "UPDATE users SET ;";
     connection.query(query, [req.body.email], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {

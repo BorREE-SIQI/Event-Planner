@@ -14,7 +14,7 @@ function showUser()
             document.getElementsByName("input-first") = this.response.first_name;
         }
       };
-      xhttp.open("POST", "/manageUser");
+      xhttp.open("POST", "/searchUser");
       // Set content type to JSON
       xhttp.setRequestHeader("Content-type", "application/json");
       // Send request
@@ -36,7 +36,7 @@ function showEvent()
         document.getElementsByName("input-d") = this.response.description;
     }
   };
-  xhttp.open("POST", "/manageEvent");
+  xhttp.open("POST", "/searchEvent");
   // Set content type to JSON
   xhttp.setRequestHeader("Content-type", "application/json");
   // Send request
@@ -45,5 +45,24 @@ function showEvent()
 
 function modifyUser()
 {
-  
+  let users = {
+    email: document.getElementsByName("input-email").value,
+    password: document.getElementsByName("input-password").value,
+    first_name: document.getElementsByName("input-first").value,
+    last_name: document.getElementsByName("input-last").value
+  };
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        alert("search Successful");
+        document.getElementsByName("input-event") = this.response.event_name;
+        document.getElementsByName("input-d") = this.response.description;
+    }
+  };
+  xhttp.open("POST", "/manageEvent");
+  // Set content type to JSON
+  xhttp.setRequestHeader("Content-type", "application/json");
+  // Send request
+  xhttp.send(JSON.stringify(users));
 }
