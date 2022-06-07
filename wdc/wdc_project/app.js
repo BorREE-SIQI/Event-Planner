@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-// create a 'pool' (group) of connections to be used for connecting with our SQL server
+//create a 'pool' (group) of connections to be used for connecting with our SQL server
 // var dbConnectionPool = mysql.createPool({
 //     host: '127.0.0.1',
 //     database: 'myDatabase'
