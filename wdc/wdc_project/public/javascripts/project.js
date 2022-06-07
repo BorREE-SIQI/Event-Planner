@@ -10,7 +10,7 @@ function showUser()
             alert("search Successful");
         }
       };
-      xhttp.open("POST", "/manageUser.html");
+      xhttp.open("POST", "/manageUser");
       // Set content type to JSON
       xhttp.setRequestHeader("Content-type", "application/json");
       // Send request
