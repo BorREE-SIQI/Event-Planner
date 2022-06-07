@@ -10,7 +10,7 @@ router.post('/manageUser', function (req, res, next) {
       return;
     }
 
-    var query = "INSERT INTO actor (first_name, last_name) VALUES (?, ?);";
+    var query = "SELECT email";
     connection.query(query, [req.body.first_name, req.body.last_name], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
