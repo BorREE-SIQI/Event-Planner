@@ -8,6 +8,7 @@ function showUser()
         xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             alert("search Successful");
+            //show manage page?
             document.getElementsByName("input-email") = this.response.email;
             document.getElementsByName("input-password") = this.response.password;
             document.getElementsByName("input-last") = this.response.last_name;
@@ -32,6 +33,7 @@ function showEvent()
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         alert("search Successful");
+        //show manage page?
         document.getElementsByName("input-event") = this.response.event_name;
         document.getElementsByName("input-d") = this.response.description;
     }
