@@ -10,8 +10,8 @@ router.post('/manageUser', function (req, res, next) {
       return;
     }
 
-    var query = "SELECT email, password, first_name,  last_name";
-    connection.query(query, [req.body.first_name, req.body.last_name], function (err, rows, fields) {
+    var query = "SELECT email password first_name last_name FROM users WHERE email = ?;";
+    connection.query(query, [req.body.email], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
         res.sendStatus(500);
