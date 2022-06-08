@@ -34,7 +34,7 @@ router.post('/searchEvents', function (req, res, next) {
       return;
     }
 
-    var query = "SELECT event_name description FROM events WHERE event_name = ?;";
+    var query = "SELECT * FROM events WHERE event_name = ?;";
     connection.query(query, [req.body.event_name], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
