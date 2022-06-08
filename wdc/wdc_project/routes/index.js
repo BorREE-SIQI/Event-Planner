@@ -20,7 +20,7 @@ router.post('/searchUsers', function (req, res, next) {
         return;
       }
       console.log(rows);
-      res.json(rows);
+      res.json(rows[0]);
     });
   });
 });
