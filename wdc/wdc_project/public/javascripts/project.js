@@ -9,7 +9,7 @@ function showUser()
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            alert("search Successful");
+            alert("search Successful"+this.response);
             window.location.replace(`./manageUser.html?email=${this.response.email}&last=${this.response.last}`);
             document.getElementsByName("input-email")[0].value = this.response.email;
             document.getElementsByName("input-password")[0].value = this.response.password;
