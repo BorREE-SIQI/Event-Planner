@@ -11,6 +11,7 @@ router.post('/searchUsers', function (req, res, next) {
     }
 
     var query = "SELECT * FROM users WHERE email = ?;";
+    console.log(req.body);
     connection.query(query, [req.body.email], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
