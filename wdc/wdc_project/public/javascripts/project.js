@@ -125,3 +125,23 @@ function deleteUser()
   // Send request
   xhttp.send(JSON.stringify(users));
 }
+
+function deleteEvent()
+{
+  let events = {
+    event: document.getElementsByName("input-event")[0].value,
+    d: document.getElementsByName("input-d")[0].value,
+  };
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        alert("Delete Successful");
+    }
+  };
+  xhttp.open("POST", "/deleteEvents");
+  // Set content type to JSON
+  xhttp.setRequestHeader("Content-type", "application/json");
+  // Send request
+  xhttp.send(JSON.stringify(events));
+}
