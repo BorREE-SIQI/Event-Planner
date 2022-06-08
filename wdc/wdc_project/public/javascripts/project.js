@@ -1,7 +1,7 @@
 function showUser()
 {
     let users = {
-        email: document.getElementsByName("userSearch")[0].placeholder
+        email: document.getElementsByName("userSearch")[0].value
       };
 
       console.log(users);
