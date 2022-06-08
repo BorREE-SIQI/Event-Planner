@@ -8,7 +8,7 @@ function showUser()
         xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             alert("search Successful");
-            //show manage page?
+            window.location.replace("./manageUser.html");
             document.getElementsByName("input-email") = this.response.email;
             document.getElementsByName("input-password") = this.response.password;
             document.getElementsByName("input-last") = this.response.last_name;
