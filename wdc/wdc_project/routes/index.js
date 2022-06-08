@@ -78,7 +78,7 @@ router.post('/manageEvents', function (req, res, next) {
       return;
     }
 
-    var query = "UPDATE events SET event_name = ? description = ?;";
+    var query = "UPDATE events SET event_name = ?, description = ? WHERE event_name = ?;";
     connection.query(query, [req.body.event,req.body.d], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
