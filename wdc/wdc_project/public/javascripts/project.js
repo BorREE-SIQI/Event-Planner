@@ -9,10 +9,10 @@ function showUser()
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            console.log(this.response);
             var obj = JSON.parse(this.response);
-            alert("search Successful"+this.response.email);
-            window.location.replace(`./manageUser.html?email=${this.response.email}&last_name=${this.response.last_name}`);
+            console.log(obj);
+            alert("search Successful"+obj.email);
+            window.location.replace(`./manageUser.html?email=${obj.email}&last_name=${obj.last_name}`);
             // document.getElementsByName("input-email")[0].value = this.response.email;
             // document.getElementsByName("input-password")[0].value = this.response.password;
             // document.getElementsByName("input-last")[0].value = this.response.last_name;
