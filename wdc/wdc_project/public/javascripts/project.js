@@ -11,10 +11,10 @@ function showUser()
         if (this.readyState == 4 && this.status == 200) {
             alert("search Successful");
             window.location.replace("./manageUser.html");
-            document.getElementsByName("input-email")[0] = this.response.email;
-            document.getElementsByName("input-password")[0] = this.response.password;
-            document.getElementsByName("input-last")[0] = this.response.last_name;
-            document.getElementsByName("input-first")[0] = this.response.first_name;
+            document.getElementsByName("input-email")[0].value = this.response.email;
+            document.getElementsByName("input-password")[0].value = this.response.password;
+            document.getElementsByName("input-last")[0].value = this.response.last_name;
+            document.getElementsByName("input-first")[0].value = this.response.first_name;
         }
       };
       xhttp.open("POST", "/searchUsers");
