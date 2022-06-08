@@ -37,8 +37,7 @@ function showEvent()
         console.log(obj);
         alert("search Successful");
         window.location.replace(`./manageEvent.html?event_name=${obj.event_name}&description=${obj.description}`);
-        document.getElementsByName("input-event") = this.response.event_name;
-        document.getElementsByName("input-d") = this.response.description;
+
     }
   };
   xhttp.open("POST", "/searchEvents");
@@ -93,8 +92,15 @@ function modifyEvent()
 function loadUser()
 {
   const urlParams = new URLSearchParams(window.location.search);
-            document.getElementsByName("input-email")[0].value = urlParams.get('email');
-            document.getElementsByName("input-password")[0].value = urlParams.get('password');
-            document.getElementsByName("input-last")[0].value = urlParams.get('last_name');
-            document.getElementsByName("input-first")[0].value = urlParams.get('first_name');
+  document.getElementsByName("input-email")[0].value = urlParams.get('email');
+  document.getElementsByName("input-password")[0].value = urlParams.get('password');
+  document.getElementsByName("input-last")[0].value = urlParams.get('last_name');
+  document.getElementsByName("input-first")[0].value = urlParams.get('first_name');
+}
+
+function loadEvent()
+{
+  const urlParams = new URLSearchParams(window.location.search);
+  document.getElementsByName("input-event")[0].value = urlParams.get('event_name');
+  document.getElementsByName("input-d")[0].value = urlParams.get('description');
 }
