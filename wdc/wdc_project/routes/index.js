@@ -56,7 +56,7 @@ router.post('/manageUsers', function (req, res, next) {
       return;
     }
 
-    var query = "UPDATE users SET password = ? first_name = ? last_name = ?;";
+    var query = "UPDATE users SET password = ? first_name = ? last_name = ? WHERE email = ?;";
     connection.query(query, [req.body.password,req.body.password,req.body.first_name,req.body.last_name], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
