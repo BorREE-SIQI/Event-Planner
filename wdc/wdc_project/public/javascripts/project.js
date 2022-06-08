@@ -104,3 +104,8 @@ function loadEvent()
   document.getElementsByName("input-event")[0].value = urlParams.get('event_name');
   document.getElementsByName("input-d")[0].value = urlParams.get('description');
 }
+
+function deleteUser()
+{
+  
+}
