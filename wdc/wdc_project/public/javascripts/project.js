@@ -72,8 +72,8 @@ function modifyUser()
 function modifyEvent()
 {
   let events = {
-    event: document.getElementsByName("input-event").value,
-    d: document.getElementsByName("input-d").value,
+    event: document.getElementsByName("input-event")[0].value,
+    d: document.getElementsByName("input-d")[0].value,
   };
 
     var xhttp = new XMLHttpRequest();
