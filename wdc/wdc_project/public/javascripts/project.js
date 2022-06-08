@@ -13,10 +13,12 @@ function showUser()
             console.log(obj);
             alert("search Successful"+obj.email);
             window.location.replace(`./manageUser.html?email=${obj.email}&last_name=${obj.last_name}`);
-            // document.getElementsByName("input-email")[0].value = this.response.email;
-            // document.getElementsByName("input-password")[0].value = this.response.password;
-            // document.getElementsByName("input-last")[0].value = this.response.last_name;
-            // document.getElementsByName("input-first")[0].value = this.response.first_name;
+            // const urlParams = new URLSearchParams(window.location.search);
+            // const myParam = urlParams.get('myParam');
+            document.getElementsByName("input-email")[0].value = obj.email;
+            document.getElementsByName("input-password")[0].value = obj.password;
+            document.getElementsByName("input-last")[0].value = objlast_name;
+            document.getElementsByName("input-first")[0].value = obj.first_name;
         }
       };
       xhttp.open("POST", "/searchUsers");
