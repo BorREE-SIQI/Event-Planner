@@ -10,7 +10,7 @@ function showUser()
         xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
           console.log(this.response);
-            alert("search Successful"+this.response[0]);
+            alert("search Successful"+this.response);
             window.location.replace(`./manageUser.html?email=${this.response.email}&last_name=${this.response.last_name}`);
             // document.getElementsByName("input-email")[0].value = this.response.email;
             // document.getElementsByName("input-password")[0].value = this.response.password;
