@@ -18,6 +18,7 @@ router.post('/searchUsers', function (req, res, next) {
         console.log(err);
         return;
       }
+      console.log(rows);
       res.json(rows[0]);
     });
   });
