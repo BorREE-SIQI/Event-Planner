@@ -9,7 +9,7 @@ CREATE TABLE admin (
 );
 
 CREATE TABLE users (
-    email VARCHAR(127) UNIQUE,
+    email VARCHAR(127),
     password VARCHAR(127),
     last_name VARCHAR(63),
     first_name VARCHAR(63),
