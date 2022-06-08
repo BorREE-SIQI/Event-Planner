@@ -26,7 +26,7 @@ function showUser()
 function showEvent()
 {
   let events = {
-    email: document.getElementsByName("eventSearch")[0].value
+    event_name: document.getElementsByName("eventSearch")[0].value
   };
 
     var xhttp = new XMLHttpRequest();
@@ -36,7 +36,7 @@ function showEvent()
         var obj = JSON.parse(this.response);
         console.log(obj);
         alert("search Successful");
-        window.location.replace(`./manageEvent.html?event_name=${obj.event_name}&last_name=${obj.last_name}`);
+        window.location.replace(`./manageEvent.html?event_name=${obj.event_name}&description=${obj.description}`);
         document.getElementsByName("input-event") = this.response.event_name;
         document.getElementsByName("input-d") = this.response.description;
     }
