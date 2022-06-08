@@ -108,7 +108,7 @@ function loadEvent()
 function deleteUser()
 {
   let users = {
-    email: document.getElementsByName("userSearch")[0].value
+    email: document.getElementsByName("input-email")[0].value
   };
 
   console.log(users);
