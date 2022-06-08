@@ -11,7 +11,7 @@ function showUser()
         if (this.readyState == 4 && this.status == 200) {
             var obj = JSON.parse(this.response);
             console.log(obj);
-            alert("search Successful"+obj.email);
+            alert("search Successful");
             window.location.replace(`./manageUser.html?email=${obj.email}&last_name=${obj.last_name}&first_name=${obj.first_name}&password=${obj.password}`);
         }
       };
@@ -26,14 +26,17 @@ function showUser()
 function showEvent()
 {
   let events = {
-    email: document.getElementsByName("eventSearch").value
+    email: document.getElementsByName("eventSearch")[0].value
   };
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         alert("search Successful");
-        //show manage page?
+        var obj = JSON.parse(this.response);
+        console.log(obj);
+        alert("search Successful");
+        window.location.replace(`./manageEvent.html?event_name=${obj.event_name}&last_name=${obj.last_name}`);
         document.getElementsByName("input-event") = this.response.event_name;
         document.getElementsByName("input-d") = this.response.description;
     }
