@@ -50,10 +50,10 @@ function showEvent()
 function modifyUser()
 {
   let users = {
-    email: document.getElementsByName("input-email").value,
-    password: document.getElementsByName("input-password").value,
-    first_name: document.getElementsByName("input-first").value,
-    last_name: document.getElementsByName("input-last").value
+    email: document.getElementsByName("input-email")[0].value,
+    password: document.getElementsByName("input-password")[0].value,
+    first_name: document.getElementsByName("input-first")[0].value,
+    last_name: document.getElementsByName("input-last")[0].value
   };
 
     var xhttp = new XMLHttpRequest();
