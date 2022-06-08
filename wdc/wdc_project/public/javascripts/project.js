@@ -3,6 +3,7 @@ function showUser()
     let users = {
         email: document.getElementsByName("userSearch").value
       };
+      console.log(users);
 
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
