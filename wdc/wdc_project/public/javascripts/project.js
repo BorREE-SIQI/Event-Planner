@@ -12,9 +12,9 @@ function showUser()
             var obj = JSON.parse(this.response);
             console.log(obj);
             alert("search Successful"+obj.email);
-            window.location.replace(`./manageUser.html?email=${obj.email}&last_name=${obj.last_name}&first_name=${obj.first_name}&password=${obj.password}`);
-            // const urlParams = new URLSearchParams(window.location.search);
-            // const myParam = urlParams.get('myParam');
+            window.location.replace(`./manageUser.html?email=${obj.email}&last_name=${obj.last_name}&first_name=${obj.first_name}&password=${obj.}`);
+            const urlParams = new URLSearchParams(window.location.search);
+            const myParam = urlParams.get('myParam');
             document.getElementsByName("input-email")[0].value = obj.email;
             document.getElementsByName("input-password")[0].value = obj.password;
             document.getElementsByName("input-last")[0].value = objlast_name;
