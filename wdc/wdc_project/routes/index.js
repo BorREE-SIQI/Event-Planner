@@ -90,4 +90,27 @@ router.post('/manageEvents', function (req, res, next) {
     });
   });
 });
+
+router.get('/deleteUsers', function (req, res, next) {
+  //Connect to the database
+  req.pool.getConnection( function(err,connection) {
+    if (err) {
+      res.sendStatus(500);
+      console.log(err);
+      return;
+    }
+
+    var query = "DELETE FROM users WHERE email = ?;";
+    console.log(req.body);
+    connection.query(query, [req.body.email], function (err, rows, fields) {
+      connection.release(); // release connection
+      if (err) {
+        res.sendStatus(500);
+        console.log(err);
+        return;
+      }
+      res.sendStatus(200);
+    });
+  });
+});
 module.exports = router;
