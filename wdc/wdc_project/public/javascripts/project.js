@@ -116,13 +116,10 @@ function deleteUser()
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        var obj = JSON.parse(this.response);
-        console.log(obj);
-        alert("search Successful");
-        window.location.replace(`./manageUser.html?email=${obj.email}&last_name=${obj.last_name}&first_name=${obj.first_name}&password=${obj.password}`);
+        alert("Delete Successful");
     }
   };
-  xhttp.open("POST", "/searchUsers");
+  xhttp.open("POST", "/deleteUsers");
   // Set content type to JSON
   xhttp.setRequestHeader("Content-type", "application/json");
   // Send request

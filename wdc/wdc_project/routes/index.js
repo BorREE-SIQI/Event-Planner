@@ -91,7 +91,7 @@ router.post('/manageEvents', function (req, res, next) {
   });
 });
 
-router.get('/deleteUsers', function (req, res, next) {
+router.post('/deleteUsers', function (req, res, next) {
   //Connect to the database
   req.pool.getConnection( function(err,connection) {
     if (err) {
