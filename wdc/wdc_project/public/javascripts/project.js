@@ -155,3 +155,24 @@ function deleteEvent()
   // Send request
   xhttp.send(JSON.stringify(events));
 }
+
+function createAdmin()
+{
+  let admin = {
+    email: document.getElementsByName("input-admin-email")[0].value
+    password: document.getElementsByName("input-admin-password")[0].value
+
+  };
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        alert("Add Successful");
+    }
+  };
+  xhttp.open("POST", "/createAdmins");
+  // Set content type to JSON
+  xhttp.setRequestHeader("Content-type", "application/json");
+  // Send request
+  xhttp.send(JSON.stringify(admin));
+}

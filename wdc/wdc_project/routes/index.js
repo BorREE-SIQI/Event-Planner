@@ -137,4 +137,28 @@ router.post('/deleteEvents', function (req, res, next) {
     });
   });
 });
+
+router.post('/createAdmins', function (req, res, next) {
+  //Connect to the database
+  req.pool.getConnection( function(err,connection) {
+    if (err) {
+      res.sendStatus(500);
+      console.log(err);
+      return;
+    }
+
+    var query = "DELETE FROM events WHERE event_name = ?;";
+    console.log(req.body);
+    connection.query(query, [req.body.event], function (err, rows, fields) {
+      connection.release(); // release connection
+      if (err) {
+        res.sendStatus(500);
+        console.log(err);
+        return;
+      }
+      res.sendStatus(200);
+    });
+  });
+});
+
 module.exports = router;
