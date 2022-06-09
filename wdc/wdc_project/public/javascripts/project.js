@@ -1,5 +1,12 @@
 var project = new Vue({
 
+  el:'#vue'
+  data: {
+    search_user = ''
+  },
+
+  method
+
 function showUser()
 {
     let users = {
@@ -23,6 +30,8 @@ function showUser()
       // Send request
       xhttp.send(JSON.stringify(users));
 }
+
+})
 
 
 function showEvent()
