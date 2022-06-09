@@ -159,10 +159,10 @@ function deleteEvent()
 function createAdmin()
 {
   let admin = {
-    email: document.getElementsByName("input-admin-email")[0].value
+    email: document.getElementsByName("input-admin-email")[0].value,
     password: document.getElementsByName("input-admin-password")[0].value
-
   };
+  console.log(admin);
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
