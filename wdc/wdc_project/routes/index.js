@@ -170,7 +170,7 @@ router.get('/showTime', function (req, res, next) {
       return;
     }
 
-    var query = "INSERT INTO admin VALUES (?, ?);";
+    var query = "SELECT timestamp, Count(timestamp) as times FROM availaility GROUP BY timestamp ORDER BY times DESC;";
     connection.query(query, function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
