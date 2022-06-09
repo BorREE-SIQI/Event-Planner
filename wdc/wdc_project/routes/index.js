@@ -171,7 +171,6 @@ router.get('/showTime', function (req, res, next) {
     }
 
     var query = "INSERT INTO admin VALUES (?, ?);";
-    console.log(req.body);
     connection.query(query, [req.body.email,req.body.password], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
