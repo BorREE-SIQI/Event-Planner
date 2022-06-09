@@ -1,11 +1,11 @@
 var project = new Vue({
 
-  el: '#vue'
+  el: '#vue',
   data: {
     search_user : ''
   },
 
-  method: {
+  methods: {
 
 showUser: function()
 {
