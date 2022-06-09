@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const sanitizeHtml = require('sanitize-html');
 
 router.post('/searchUsers', function (req, res, next) {
   //Connect to the database
