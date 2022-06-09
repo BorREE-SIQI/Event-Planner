@@ -184,7 +184,7 @@ function pickTime()
     if (this.readyState == 4 && this.status == 200) {
       console.log(this.response);
       var obj = JSON.parse(this.response);
-      document.getElementsByName("finalDate") = obj;
+      document.getElementsByName("finalDate")[0]= obj;
         //alert("Add Successful");
     }
   };
