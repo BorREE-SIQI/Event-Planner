@@ -10,7 +10,8 @@ var project = new Vue({
 showUser: function()
 {
     let users = {
-        email: document.getElementsByName("userSearch")[0].value
+        email: project.search_user
+        //document.getElementsByName("userSearch")[0].value
       };
 
       console.log(users);
