@@ -186,7 +186,7 @@ function pickTime()
       var obj = JSON.parse(this.response);
       console.log(obj);
       console.log(obj.timestamp);
-      document.getElementsByName("finalDate")[0]= obj.timestamp;
+      document.getElementsByName("finalDate")[0].innerHTML= obj.timestamp;
         //alert("Add Successful");
     }
   };
