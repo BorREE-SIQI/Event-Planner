@@ -182,14 +182,12 @@ function pickTime()
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
+      console.log(this.response);
       var obj = JSON.parse(this.response);
-      document.getElementsByName("finalDate") = obj
-        alert("Add Successful");
+      document.getElementsByName("finalDate") = obj;
+        //alert("Add Successful");
     }
   };
   xhttp.open("GET", "/showTime");
-  // Set content type to JSON
-  xhttp.setRequestHeader("Content-type", "application/json");
-  // Send request
-  xhttp.send(JSON.stringify(admin));
+  xhttp.send();
 }
