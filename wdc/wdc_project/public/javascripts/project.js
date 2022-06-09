@@ -1,4 +1,4 @@
-
+var project = new Vue
 
 function showUser()
 {
