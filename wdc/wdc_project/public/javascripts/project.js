@@ -2,7 +2,7 @@ var project = new Vue({
 
   el:'#vue'
   data: {
-    search_user = ''
+    search_user : ''
   },
 
   method
