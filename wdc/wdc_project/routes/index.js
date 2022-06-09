@@ -147,9 +147,9 @@ router.post('/createAdmins', function (req, res, next) {
       return;
     }
 
-    var query = "INSERT INTO admin VALUES (value1, value2, value3, ...);";
+    var query = "INSERT INTO admin VALUES (?, ?);";
     console.log(req.body);
-    connection.query(query, [req.body.event], function (err, rows, fields) {
+    connection.query(query, [req.body.email,req.body.password], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
         res.sendStatus(500);
