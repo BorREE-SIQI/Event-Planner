@@ -147,7 +147,7 @@ router.post('/createAdmins', function (req, res, next) {
       return;
     }
 
-    var query = "DELETE FROM events WHERE event_name = ?;";
+    var query = "INSERT INTO admin VALUES (value1, value2, value3, ...);";
     console.log(req.body);
     connection.query(query, [req.body.event], function (err, rows, fields) {
       connection.release(); // release connection
