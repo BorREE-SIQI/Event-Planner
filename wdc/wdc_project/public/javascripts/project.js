@@ -5,9 +5,9 @@ var project = new Vue({
     search_user : ''
   },
 
-  method
+  method: {
 
-function showUser()
+showUser: function()
 {
     let users = {
         email: document.getElementsByName("userSearch")[0].value
@@ -30,6 +30,7 @@ function showUser()
       // Send request
       xhttp.send(JSON.stringify(users));
 }
+  }
 
 })
 
