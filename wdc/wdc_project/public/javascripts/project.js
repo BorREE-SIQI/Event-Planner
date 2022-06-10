@@ -196,5 +196,6 @@ function pickTime()
 
 function trackID()
 {
-  
+  const urlParams = new URLSearchParams(window.location.search);
+  var event_ID = urlParams.get('ID');
 }
