@@ -218,14 +218,13 @@ function createEvent()
 {
   let event = {
     name: document.getElementsByName("eventName")[0].value,
-    d: document.getElementsByName("eventD")[0].value
+    d: document.getElementsByName("eventD")[0].value,
   };
-  console.log(admin);
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        alert("Create Successful");
+        alert("Add Successful");
     }
   };
   xhttp.open("POST", "/createEvents");
