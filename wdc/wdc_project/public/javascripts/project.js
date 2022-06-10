@@ -214,9 +214,8 @@ function collectTime()
   xhttp.send(JSON.stringify(available));
 }
 
-function createEvent()
+function createNewEvent()
 {
-  console.log(err);
   let event = {
     name: document.getElementsByName("eventName")[0].value,
     d: document.getElementsByName("eventD")[0].value,

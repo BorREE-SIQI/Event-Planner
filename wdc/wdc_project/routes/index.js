@@ -215,7 +215,7 @@ router.post('/createEvents', function (req, res, next) {
       return;
     }
 
-    var query = "INSERT INTO events VALUES (1, ?, ?);";
+    var query = "INSERT INTO events VALUES ( ?, ?);";
     console.log(req.body);
     connection.query(query, [req.body.name,req.body.d], function (err, rows, fields) {
       connection.release(); // release connection
