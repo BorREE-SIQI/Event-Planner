@@ -238,7 +238,7 @@ function createNewEvent()
 function userEvent()
 {
   let events = {
-    event_name: document.getElementsByName("eventDetails")[0].innerText
+    event_name: document.getElementsByName("eventDetails2")[0].innerText
   };
 
   console.log(events);
