@@ -31,7 +31,7 @@ showUser: function()
 }
   }
 
-})
+});
 
 
 function showEvent()
