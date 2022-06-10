@@ -274,3 +274,13 @@
 
     margin-top: 3%;
 }
+
+.email
+{
+    background-color: black;
+    color: grey;
+    width: 10cm;
+    height: 1cm;
+    font-size: 0.5cm;
+    text-align: center;
+}
