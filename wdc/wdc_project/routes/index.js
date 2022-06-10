@@ -214,11 +214,10 @@ router.post('/createEvents', function (req, res, next) {
       console.log(err);
       return;
     }
-    let tempvar= DEFAULT;
 
-    var query = "INSERT INTO events VALUES (?, ?, ?);";
+    var query = "INSERT INTO events VALUES (NULL, ?, ?);";
     console.log(req.body);
-    connection.query(query, [tempvar,req.body.name,req.body.d], function (err, rows, fields) {
+    connection.query(query, [req.body.name,req.body.d], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
         res.sendStatus(500);
