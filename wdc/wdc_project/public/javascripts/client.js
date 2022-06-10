@@ -238,7 +238,7 @@ function createNewEvent()
 function userEvent()
 {
   let events = {
-    event_name: document.getElementsByName("eventDetails")[0].innerHTML
+    event_name: document.getElementsByName("eventDetails")[0].innerText
   };
 
   console.log(events);
@@ -249,7 +249,7 @@ function userEvent()
         var obj = JSON.parse(this.response);
         console.log(obj);
         alert("Show Successful");
-        window.location.replace(`./eventDetail.html?event_name=${obj.event_name}&description=${obj.description}`);
+        window.location.replace(`./eventDetail.html?event_name=${obj.event_name}&description=${obj.description}&ID=${obj.ID}`);
 
     }
   };
@@ -264,6 +264,6 @@ function loadUserEvent()
 {
   const urlParams = new URLSearchParams(window.location.search);
   document.getElementsByName("user-event-name")[0].value = urlParams.get('event_name');
- // document.getElementsByName("user-event-ID")[0].value = urlParams.get('ID');
+  document.getElementsByName("user-event-ID")[0].value = urlParams.get('ID');
   document.getElementsByName("user-event-d")[0].value = urlParams.get('description');
 }
