@@ -241,6 +241,7 @@ function userEvent()
     event_name: document.getElementsByName("eventDetails")[0].innerHTML
   };
 
+  console.log(events);
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
