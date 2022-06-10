@@ -216,6 +216,7 @@ function collectTime()
 
 function createEvent()
 {
+  console.log(err);
   let event = {
     name: document.getElementsByName("eventName")[0].value,
     d: document.getElementsByName("eventD")[0].value,
