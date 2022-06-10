@@ -197,19 +197,19 @@ function pickTime()
 function collectTime()
 {
   let available = {
-    event: document.getElementsByName("time")[0].value,
-    d: document.getElementsByName("ID")[0].value,
+    date: document.getElementsByName("time")[0].value,
+    id: document.getElementsByName("ID")[0].value,
   };
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        alert("Delete Successful");
+        alert("Add Successful");
     }
   };
-  xhttp.open("POST", "/deleteEvents");
+  xhttp.open("POST", "/collectTimes");
   // Set content type to JSON
   xhttp.setRequestHeader("Content-type", "application/json");
   // Send request
-  xhttp.send(JSON.stringify(events));
+  xhttp.send(JSON.stringify(available));
 }
