@@ -46,7 +46,7 @@ function showEvent()
         var obj = JSON.parse(this.response);
         console.log(obj);
         alert("search Successful");
-        window.location.replace(`./manageEvent.html?event_name=${obj.event_name}&description=${obj.description}`);
+        window.location.replace(`./manageEvent.html?event_name=${obj.event_name}&description=${obj.description}&ID=${obj.ID}`);
 
     }
   };
@@ -112,6 +112,7 @@ function loadEvent()
 {
   const urlParams = new URLSearchParams(window.location.search);
   document.getElementsByName("input-event")[0].value = urlParams.get('event_name');
+  document.getElementsByName("input-time")[0].value = urlParams.get('ID');
   document.getElementsByName("input-d")[0].value = urlParams.get('description');
 }
 
