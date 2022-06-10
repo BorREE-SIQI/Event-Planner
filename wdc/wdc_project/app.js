@@ -1,31 +1,41 @@
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+var session = require('express-session');
 var logger = require('morgan');
 var mysql = require('mysql');
+const jwt_decode = require('jwt-decode');
 const sanitizeHtml = require('sanitize-html');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
 var app = express();
 
-//create a 'pool' (group) of connections to be used for connecting with our SQL server
-var dbConnectionPool = mysql.createPool({
-    host: '127.0.0.1',
-    database: 'myDatabase'
-  });
+var dbConnectionPool = mysql.createPool({ host: 'localhost', database: "myDatabase"});
+app.use(function(req,res,next){
+  req.pool = dbConnectionPool;
+  next();
+});
 
-app.use(function(req, res, next) {
-    req.pool = dbConnectionPool;
-    next();
-  });
+
+// let token = req.get('token');
+// var decodedHeader = jwt_decode(token, { header: true });
+// console.log(decodedHeader);
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({                               //           //
+  secret: 'kjdsfkjgfkjhkfjghkahjfg',          //           //
+  resave: false,                              // THIS CODE //
+  saveUninitialized: true,                    //           //
+  cookie: { secure: false }                   //           //
+}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
