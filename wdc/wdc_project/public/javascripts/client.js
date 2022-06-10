@@ -233,3 +233,27 @@ function createNewEvent()
   // Send request
   xhttp.send(JSON.stringify(event));
 }
+
+
+function userEvent()
+{
+  let events = {
+    event_name: document.getElementsByName("eventDetails")[0].innerHTML
+  };
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var obj = JSON.parse(this.response);
+        console.log(obj);
+        alert("Show Successful");
+        window.location.replace(`./eventDetail.html?event_name=${obj.event_name}&description=${obj.description}`);
+
+    }
+  };
+  xhttp.open("POST", "/userEvents");
+  // Set content type to JSON
+  xhttp.setRequestHeader("Content-type", "application/json");
+  // Send request
+  xhttp.send(JSON.stringify(events));
+}
