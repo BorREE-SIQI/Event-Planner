@@ -233,3 +233,22 @@ function createNewEvent()
   // Send request
   xhttp.send(JSON.stringify(event));
 }
+
+function profile() {
+  var xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+      var user = JSON.parse(this.responseText);
+      console.log(user);
+
+      email: document.getElementsByName("input-email")[0].value = user[0].email;
+      password: document.getElementsByName("input-password")[0].value = user[0].password;
+      first_name: document.getElementsByName("input-first")[0].value = user[0].first_name;
+      last_name: document.getElementsByName("input-last")[0].value = user[0].last_name;
+
+    }
+  };
+
+xmlhttp.open("GET", "/profile?password="+password+"&"+"email"+email+"first_name"+first_name+"last_name"+last_name, true);
+xmlhttp.send();
