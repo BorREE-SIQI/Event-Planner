@@ -217,7 +217,7 @@ router.post('/createEvents', function (req, res, next) {
 
     var query = "INSERT INTO events VALUES (?, ?);";
     console.log(req.body);
-    connection.query(query, [req.body.name,req.body.d], function (err, rows, fields) {
+    connection.query(query, [NULL,req.body.name,req.body.d], function (err, rows, fields) {
       connection.release(); // release connection
       if (err) {
         res.sendStatus(500);
