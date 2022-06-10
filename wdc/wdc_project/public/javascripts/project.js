@@ -242,10 +242,10 @@ xmlhttp.onreadystatechange = function() {
       var user = JSON.parse(this.responseText);
       console.log(user);
 
-      email: document.getElementsByName("input-email")[0].value = user[0].email;
-      password: document.getElementsByName("input-password")[0].value = user[0].password;
-      first_name: document.getElementsByName("input-first")[0].value = user[0].first_name;
-      last_name: document.getElementsByName("input-last")[0].value = user[0].last_name;
+      email: document.getElementsByName("profile-email")[0].value = user.email;
+      password: document.getElementsByName("profile-password")[0].value = user.password;
+      first_name: document.getElementsByName("profile-first")[0].value = user.first_name;
+      last_name: document.getElementsByName("profile-last")[0].value = user.last_name;
 
     }
   };
