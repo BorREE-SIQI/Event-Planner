@@ -233,23 +233,3 @@ function createNewEvent()
   // Send request
   xhttp.send(JSON.stringify(event));
 }
-
-function profile() {
-  var xmlhttp = new XMLHttpRequest();
-
-xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-      var user = JSON.parse(this.responseText);
-      console.log(user);
-
-      email: document.getElementsByName("profile-email")[0].value = user.email;
-      password: document.getElementsByName("profile-password")[0].value = user.password;
-      first_name: document.getElementsByName("profile-first")[0].value = user.first_name;
-      last_name: document.getElementsByName("profile-last")[0].value = user.last_name;
-
-    }
-  };
-
-xmlhttp.open("GET", "/profile?password="+password+"&"+"email"+email+"first_name"+first_name+"last_name"+last_name, true);
-xmlhttp.send();
-}
