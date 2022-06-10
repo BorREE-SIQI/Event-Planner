@@ -252,4 +252,26 @@ router.get('/profile', function (req, res, next) {
   });
 });
 
+router.post('/userEvents', function (req, res, next) {
+  //Connect to the database
+  req.pool.getConnection( function(err,connection) {
+    if (err) {
+      res.sendStatus(500);
+      console.log(err);
+      return;
+    }
+
+    var query = "SELECT * FROM events WHERE event_name = ?;";
+    connection.query(query, [req.body.event_name], function (err, rows, fields) {
+      connection.release(); // release connection
+      if (err) {
+        res.sendStatus(500);
+        console.log(err);
+        return;
+      }
+      res.json(rows[0]);
+    });
+  });
+});
+
 module.exports = router;
