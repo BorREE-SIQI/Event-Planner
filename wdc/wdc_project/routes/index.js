@@ -206,4 +206,27 @@ router.post('/collectTimes', function (req, res, next) {
   });
 });
 
+router.post('/createEvents', function (req, res, next) {
+  //Connect to the database
+  req.pool.getConnection( function(err,connection) {
+    if (err) {
+      res.sendStatus(500);
+      console.log(err);
+      return;
+    }
+
+    var query = "INSERT INTO events VALUES (?, ?, ?);";
+    console.log(req.body);
+    connection.query(query, [req.body.email,req.body.password], function (err, rows, fields) {
+      connection.release(); // release connection
+      if (err) {
+        res.sendStatus(500);
+        console.log(err);
+        return;
+      }
+      res.sendStatus(200);
+    });
+  });
+});
+
 module.exports = router;
