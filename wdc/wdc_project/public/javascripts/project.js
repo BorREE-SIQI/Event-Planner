@@ -252,3 +252,4 @@ xmlhttp.onreadystatechange = function() {
 
 xmlhttp.open("GET", "/profile?password="+password+"&"+"email"+email+"first_name"+first_name+"last_name"+last_name, true);
 xmlhttp.send();
+}
