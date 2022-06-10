@@ -194,7 +194,7 @@ function pickTime()
   xhttp.send();
 }
 
-function trackID()
+function collectTime()
 {
   const urlParams = new URLSearchParams(window.location.search);
   var event_ID = urlParams.get('ID');
