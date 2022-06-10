@@ -213,3 +213,8 @@ function collectTime()
   // Send request
   xhttp.send(JSON.stringify(available));
 }
+
+function createEvent()
+{
+  
+}
