@@ -7,23 +7,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>EVENT PLANNER</title>
 </head>
-<body onload = "loadProfile()">
+<body>
     <div id = "icon">
-        <span class = "btn button-home" onclick = "location.href = './index.html'">
+        <button class = "btn button-home" onclick = "location.href = './homeAdmin.html'">
             <i class="fa fa-home"></i>
-        </span>
-
-        <span class = "btn button-home" onclick = "location.href = './home.html'">
+        </button>
+        <button class = "btn button-home" onclick = "location.href = './home.html'">
             <i class="fa fa-calendar"></i>
-        </span>
-
-        <span class = "btn button-home" onclick = "location.href = './profile.html'">
-        <i class="fa fa-address-card-o"></i>
-        </span>
-
-          <span class = "btn button-home" onclick = "location.href = './login.html'">
+        </button>
+        <button class = "btn button-home" onclick = "location.href = './profile.html'">
             <i class="fa fa-user-o"></i>
-          </span>
+        </button>
 
     </div>
     <div class = "createAccount" style = "font-weight: bold;">PROFILE</div>
@@ -45,6 +39,6 @@
         </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <script src="/javascripts/client.js" defer></script>
+    <script src="project.js" defer></script>
 </body>
 </html>
