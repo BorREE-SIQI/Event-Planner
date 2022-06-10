@@ -2,10 +2,12 @@
 <html lang = 'en'>
 <head>
 <meta charset = "UTF-8">
-<script src="https://kit.fontawesome.com/d16385a085.js" crossorigin="anonymous"></script>
-<link rel = "stylesheet" href="/stylesheets/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>landingPage</title>
+<meta name="google-signin-client_id" content="158119094556-ov0o7j11lppa1spla0o3mdu79t9e2rim.apps.googleusercontent.com">
 
+<script src="https://kit.fontawesome.com/d16385a085.js" crossorigin="anonymous"></script>
+<link rel = "stylesheet" href="stylesheets/project.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,33 +17,42 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-<title>EVENT PLANNER</title>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
 </head>
+
 <body>
+  <div class="bottom">
     <div id = "icon">
-        <button class = "btn button-home" onclick = "location.href = './index.html'">
+        <span class = "btn button-home" onclick = "location.href = './index.html'">
             <i class="fa fa-home"></i>
-        </button>
+        </span>
 
-        <button class = "btn button-home" onclick = "location.href = './home.html'">
+        <span class = "btn button-home" onclick = "location.href = './login.html'">
             <i class="fa fa-calendar"></i>
-        </button>
+        </span>
 
-        <button class = "btn button-home" onclick = "location.href = './profile.html'">
+        <span class = "btn button-home" onclick = "location.href = './login.html'">
         <i class="fa fa-address-card-o"></i>
-        </button>
+        </span>
 
-        <button class = "btn button-home" onclick = "location.href = './login.html'">
-            <i class="fa fa-regular fa-user"></i>
-        </button>
+          <span class = "btn button-home" onclick = "location.href = './login.html'">
+            <i class="fa fa-user-o"></i>
+          </span>
+
     </div>
+
     <div class = "welcome">WELCOME</div>
     <div class = "centre">
-    <button class = "button btn" onclick = "location.href = './createEvent.html'">CREATE NEW EVENT</button>
+    <button class = "button btn" onclick = "location.href = './login.html'">CREATE NEW EVENT</button>
     </div>
-    <div class = "centre">
-        <button class = "btn button-createAccount" onclick = "location.href = './loginAdmin.html'">ENTER AS ADMIN</button>
+    <div class = "centre enterAsAdmin">
+        <button class = "btn button-createAccount " onclick = "location.href = './loginAdmin.html'">ENTER AS ADMIN</button>
         </div>
+
+ </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="project.js" defer></script>
