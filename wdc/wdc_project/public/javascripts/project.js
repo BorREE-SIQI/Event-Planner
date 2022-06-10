@@ -196,6 +196,20 @@ function pickTime()
 
 function collectTime()
 {
-  const urlParams = new URLSearchParams(window.location.search);
-  var event_ID = urlParams.get('ID');
+  let available = {
+    event: document.getElementsByName("time")[0].value,
+    d: document.getElementsByName("ID")[0].value,
+  };
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        alert("Delete Successful");
+    }
+  };
+  xhttp.open("POST", "/deleteEvents");
+  // Set content type to JSON
+  xhttp.setRequestHeader("Content-type", "application/json");
+  // Send request
+  xhttp.send(JSON.stringify(events));
 }
