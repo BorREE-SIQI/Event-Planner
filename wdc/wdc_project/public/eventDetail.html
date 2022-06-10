@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>EVENT PLANNER</title>
 </head>
-<body>
+<body onload = "loadUserEvent()">
     <div id = "icon">
         <button class = "btn button-home" onclick = "location.href = './index.html'">
             <i class="fa fa-home"></i>
@@ -25,13 +25,13 @@
     <div class = "createAccount">EVENT DETAIL</div>
     <hr>
     <div class = "centre">
-    <input type = "text" class = "inputEvent" value = "Event Name">
+    <input type = "text" class = "inputEvent" name = "user-event-name" value = "Event Name">
     </div>
     <div class = "centre">
-        <input type = "text" class = "inputEvent" value = "Event ID">
+        <input type = "text" class = "inputEvent" name = "user-event-ID" value = "Event ID">
         </div>
     <div class = "centre">
-    <input type = "text" id = "Description" value = "Description">
+    <input type = "text" id = "Description" name = "user-event-d" value = "Description">
     </div>
     <div class = "centre">
     <button class = "button-login btn">EDIT</button>
