@@ -262,6 +262,6 @@ function loadUserEvent()
 {
   const urlParams = new URLSearchParams(window.location.search);
   document.getElementsByName("user-event-name")[0].value = urlParams.get('event_name');
-  document.getElementsByName("user-event-ID")[0].value = urlParams.get('ID');
+ // document.getElementsByName("user-event-ID")[0].value = urlParams.get('ID');
   document.getElementsByName("user-event-d")[0].value = urlParams.get('description');
 }
